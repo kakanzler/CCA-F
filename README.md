@@ -2,7 +2,7 @@
 
 ## Overview
 
-- このリポジトリは CCA-F（Claude Code Architect - Foundations）の合格を目的に、Anthropic Academy での学習記録をまとめたものです。本リポジトリ内の内容に誤りがあったとしても、筆者は一切の責任を負いません。
+- このリポジトリは CCA-F（Claude Certified Architect - Foundations）の合格を目的に、Anthropic Academy での学習記録をまとめたものです。本リポジトリ内の内容に誤りがあったとしても、筆者は一切の責任を負いません。
 
 ## Reference
 
