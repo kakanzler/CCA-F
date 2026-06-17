@@ -37,22 +37,22 @@ Anthropic Academyのまとめ作業用コマンド。現在開いているsummar
 
    **ディレクトリパスの解析**
    summary.mdのパスから以下を抽出する:
-   - `reference/XX---aaaaa/YY_BBBBB/summary.md` という構成を前提とする
+   - `reference/XX---aaaaa/YY_bbbbb/summary.md` という構成を前提とする
    - `XX` = コース番号（例: `01`）
    - `aaaaa` = コース名（例: `Cluade_101`）
    - `YY` = モジュール番号（例: `08`）
-   - `BBBBB` = モジュール名（例: `Connecting your tools`）
+   - `bbbbb` = モジュール名（例: `Connecting your tools`）
 
    **README.mdの更新**
    リポジトリルートのREADME.mdを開き、`## 学習進捗` 内の `### XX — aaaaa` に対応するセクションを探す。
-   - セクションが存在する場合: 既存の表に `| YY | BBBBB | ✅ 完了 |` の行を追記する
+   - セクションが存在する場合: 既存の表に `| YY | bbbbb | ✅ 完了 |` の行を追記する。ただし、すでに該当の行がある場合は外套の行を修正する。
    - セクションが存在しない場合: `### XX — aaaaa` の見出しと表を新規作成して追記する
 
    表のフォーマット:
    ```
    | # | モジュール | ステータス |
    |---|---|---|
-   | YY | BBBBB | ✅ 完了 |
+   | YY | bbbbb | ✅ 完了 |
    ```
 
    **コミット**
