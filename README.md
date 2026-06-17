@@ -17,15 +17,17 @@
 | 05 | Introduction to Projects | ✅ 完了 |
 | 06 | Creating with Artifacts | ✅ 完了 |
 | 07 | Working with Skills | ✅ 完了 |
+| 08 | Connecting your tools | ✅ 完了 |
 
 ## ディレクトリ構成
 
 ```
 reference/
-└── 01---Claude_101/                   # コース
+└── 01---Cluade_101/                   # コース
     ├── 05_introduction_to_projects/   # 子カテゴリ
     │   ├── origin.md                  # 原文メモ
     │   └── summary.md                 # 自身で要約
     ├── 06_creating_with_artifacts/
-    └── 07_Working_with_skills/
+    ├── 07_Wroking_with_skills/
+    └── 08_Connecting your tools/
 ```
