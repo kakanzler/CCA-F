@@ -20,6 +20,7 @@
 | 08 | Connecting your tools | ✅ 完了 |
 | 10 | Research mode for deep dives | ✅ 完了 |
 | 11 | Claude in action: use-cases by role | ✅ 完了 |
+| 12 | Other ways to work with Claude | ✅ 完了 |
 
 ## ディレクトリ構成
 
