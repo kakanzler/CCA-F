@@ -18,6 +18,7 @@
 | 06 | Creating with Artifacts | ✅ 完了 |
 | 07 | Working with Skills | ✅ 完了 |
 | 08 | Connecting your tools | ✅ 完了 |
+| 10 | Research mode for deep dives | ✅ 完了 |
 
 ## ディレクトリ構成
 
