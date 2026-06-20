@@ -17,4 +17,4 @@
 
 ## Reference
 
-- []()
+- [Claude in action: use-cases by role](https://anthropic.skilljar.com/claude-101/383401)

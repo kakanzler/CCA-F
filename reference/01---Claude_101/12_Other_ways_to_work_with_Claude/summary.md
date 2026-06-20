@@ -46,4 +46,4 @@
 
 ## Reference
 
-- []()
+- [Other ways to work with Claude](https://anthropic.skilljar.com/claude-101/383402)
