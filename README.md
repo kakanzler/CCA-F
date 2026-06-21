@@ -23,6 +23,12 @@
 | 12 | Other ways to work with Claude | ✅ 完了 |
 | 13 | What's next? | ✅ 完了 |
 
+### 02 — Claude_Code_101
+
+| # | モジュール | ステータス |
+|---|---|---|
+| 08 | The CLAUDE.md file | ✅ 完了 |
+
 ## ディレクトリ構成
 
 ```
