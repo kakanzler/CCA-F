@@ -30,6 +30,7 @@
 | 08 | The CLAUDE.md file | ✅ 完了 |
 | 09 | subagents | ✅ 完了 |
 | 11 | MCP | ✅ 完了 |
+| 12 | hooks | ✅ 完了 |
 
 ## ディレクトリ構成
 
