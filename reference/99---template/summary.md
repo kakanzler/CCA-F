@@ -6,7 +6,7 @@
 ### Note/Tips
 
 
-## Supplement（Claude Code CLIでのSkills）
+## Supplement
 
 
 ## Reference
