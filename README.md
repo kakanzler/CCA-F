@@ -28,6 +28,7 @@
 
 | # | モジュール | ステータス | 完了日|
 |---|---|---|---|
+| 04 | [Your first prompt](reference/02---Claude_Code_101/04_Your_first_prompt/summary.md) | ✅ 完了 | 2026/06/23 |
 | 08 | [The CLAUDE.md file](reference/02---Claude_Code_101/08_the_caludemd_file/summary.md) | ✅ 完了 | 2026/06/21 |
 | 09 | [subagents](reference/02---Claude_Code_101/09_subagents/summary.md) | ✅ 完了 | 2026/06/22 |
 | 10 | [skills](reference/02---Claude_Code_101/10_skills/summary.md) | ✅ 完了 | 2026/06/23 |
