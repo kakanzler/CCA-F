@@ -56,15 +56,17 @@ Anthropic Academyのまとめ作業用コマンド。現在開いているsummar
    - `bbbbb` = モジュール名（例: `Connecting your tools`）
 
    **README.mdの更新**
-   リポジトリルートのREADME.mdを開き、`## 学習進捗` 内の `### XX — aaaaa` に対応するセクションを探す。
-   - セクションが存在する場合: 既存の表に `| YY | bbbbb | ✅ 完了 |` の行を追記する。ただし、すでに該当の行がある場合は外套の行を修正する。
-   - セクションが存在しない場合: `### XX — aaaaa` の見出しと表を新規作成して追記する
+   リポジトリルートのREADME.mdを開き、`## 学習進捗` 内の、コースディレクトリ `reference/XX---aaaaa/` へリンクした見出し `### XX — [aaaaa](reference/XX---aaaaa/)` に対応するセクションを探す。
+   - モジュール名はsummary.mdへのリンク `[bbbbb](reference/XX---aaaaa/YY_bbbbb/summary.md)` とする。パスにスペースが含まれる場合は `%20` でエスケープする。
+   - 完了日は今日の日付を `YYYY/MM/DD` 形式で記載する。
+   - セクションが存在する場合: 既存の表に下記フォーマットの行を追記する。ただし、すでに該当の行がある場合はその行を修正する。
+   - セクションが存在しない場合: `### XX — [aaaaa](reference/XX---aaaaa/)` の見出しと表を新規作成して追記する
 
    表のフォーマット:
    ```
-   | # | モジュール | ステータス |
-   |---|---|---|
-   | YY | bbbbb | ✅ 完了 |
+   | # | モジュール | ステータス | 完了日|
+   |---|---|---|---|
+   | YY | [bbbbb](reference/XX---aaaaa/YY_bbbbb/summary.md) | ✅ 完了 | YYYY/MM/DD |
    ```
 
    **コミット**
