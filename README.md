@@ -38,6 +38,12 @@
 | 11 | [MCP](reference/05---Claude_Code_101/11_MCP/summary.md) | ✅ 完了 | 2026/06/22 |
 | 12 | [hooks](reference/05---Claude_Code_101/12_hooks/summary.md) | ✅ 完了 | 2026/06/23 |
 
+### 06 — [Claude_Code_in_Action](reference/06---Claude_Code_in_Action/)
+
+| # | モジュール | ステータス | 完了日|
+|---|---|---|---|
+| 01 | [Introduction](reference/06---Claude_Code_in_Action/01_Introduction/summary.md) | ✅ 完了 | 2026/06/25 |
+
 ## ディレクトリ構成
 
 ```
