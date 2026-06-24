@@ -24,19 +24,19 @@
 | 12 | [Other ways to work with Claude](reference/01---Claude_101/12_Other_ways_to_work_with_Claude/summary.md) | ✅ 完了 | 2026/06/20 |
 | 13 | [What's next?](reference/01---Claude_101/13_Whats_next/summary.md) | ✅ 完了 | 2026/06/20 |
 
-### 02 — [Claude_Code_101](reference/02---Claude_Code_101/)
+### 05 — [Claude_Code_101](reference/05---Claude_Code_101/)
 
 | # | モジュール | ステータス | 完了日|
 |---|---|---|---|
-| 04 | [Your first prompt](reference/02---Claude_Code_101/04_Your_first_prompt/summary.md) | ✅ 完了 | 2026/06/23 |
-| 05 | [The Explore → Plan → Code → Commit workflow](reference/02---Claude_Code_101/05_The_explore-plan-code-commit-workflow/summary.md) | ✅ 完了 | 2026/06/25 |
-| 06 | [Context management](reference/02---Claude_Code_101/06_Context_management/summary.md) | ✅ 完了 | 2026/06/23 |
-| 07 | [Code Review](reference/02---Claude_Code_101/07_Code_Review/summary.md) | ✅ 完了 | 2026/06/23 |
-| 08 | [The CLAUDE.md file](reference/02---Claude_Code_101/08_the_caludemd_file/summary.md) | ✅ 完了 | 2026/06/21 |
-| 09 | [subagents](reference/02---Claude_Code_101/09_subagents/summary.md) | ✅ 完了 | 2026/06/22 |
-| 10 | [skills](reference/02---Claude_Code_101/10_skills/summary.md) | ✅ 完了 | 2026/06/23 |
-| 11 | [MCP](reference/02---Claude_Code_101/11_MCP/summary.md) | ✅ 完了 | 2026/06/22 |
-| 12 | [hooks](reference/02---Claude_Code_101/12_hooks/summary.md) | ✅ 完了 | 2026/06/23 |
+| 04 | [Your first prompt](reference/05---Claude_Code_101/04_Your_first_prompt/summary.md) | ✅ 完了 | 2026/06/23 |
+| 05 | [The Explore → Plan → Code → Commit workflow](reference/05---Claude_Code_101/05_The_explore-plan-code-commit-workflow/summary.md) | ✅ 完了 | 2026/06/25 |
+| 06 | [Context management](reference/05---Claude_Code_101/06_Context_management/summary.md) | ✅ 完了 | 2026/06/23 |
+| 07 | [Code Review](reference/05---Claude_Code_101/07_Code_Review/summary.md) | ✅ 完了 | 2026/06/23 |
+| 08 | [The CLAUDE.md file](reference/05---Claude_Code_101/08_the_caludemd_file/summary.md) | ✅ 完了 | 2026/06/21 |
+| 09 | [subagents](reference/05---Claude_Code_101/09_subagents/summary.md) | ✅ 完了 | 2026/06/22 |
+| 10 | [skills](reference/05---Claude_Code_101/10_skills/summary.md) | ✅ 完了 | 2026/06/23 |
+| 11 | [MCP](reference/05---Claude_Code_101/11_MCP/summary.md) | ✅ 完了 | 2026/06/22 |
+| 12 | [hooks](reference/05---Claude_Code_101/12_hooks/summary.md) | ✅ 完了 | 2026/06/23 |
 
 ## ディレクトリ構成
 
