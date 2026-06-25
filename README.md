@@ -44,6 +44,7 @@
 |---|---|---|---|
 | 01 | [Introduction](reference/06---Claude_Code_in_Action/01_Introduction/summary.md) | ✅ 完了 | 2026/06/25 |
 | 02 | [What is a coding assistant?](reference/06---Claude_Code_in_Action/02_What_is_coding_assistant/summary.md) | ✅ 完了 | 2026/06/25 |
+| 03 | [Claude Code in Action](reference/06---Claude_Code_in_Action/03_Claude_Code_in_action/summary.md) | ✅ 完了 | 2026/06/25 |
 
 ## ディレクトリ構成
 
