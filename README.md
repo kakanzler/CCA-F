@@ -43,6 +43,7 @@
 | # | モジュール | ステータス | 完了日|
 |---|---|---|---|
 | 01 | [Introduction](reference/06---Claude_Code_in_Action/01_Introduction/summary.md) | ✅ 完了 | 2026/06/25 |
+| 02 | [What is a coding assistant?](reference/06---Claude_Code_in_Action/02_/summary.md) | ✅ 完了 | 2026/06/25 |
 
 ## ディレクトリ構成
 
