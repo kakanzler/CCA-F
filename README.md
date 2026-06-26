@@ -47,6 +47,7 @@
 | 03 | [Claude Code in Action](reference/06---Claude_Code_in_Action/03_Claude_Code_in_action/summary.md) | ✅ 完了 | 2026/06/25 |
 | 04 | [Claude Code setup](reference/06---Claude_Code_in_Action/04_Claude_Code_setup/summary.md) | ➖ 割愛 | 2026/06/25 |
 | 05 | [Project setup](reference/06---Claude_Code_in_Action/05_Project_setup/summary.md) | ➖ 割愛 | 2026/06/26 |
+| 06 | [Adding context](reference/06---Claude_Code_in_Action/06_Adding_context/summary.md) | ✅ 完了 | 2026/06/26 |
 
 ## ディレクトリ構成
 
