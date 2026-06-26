@@ -49,7 +49,7 @@
 | 05 | [Project setup](reference/06---Claude_Code_in_Action/05_Project_setup/summary.md) | ➖ 割愛 | 2026/06/26 |
 | 06 | [Adding context](reference/06---Claude_Code_in_Action/06_Adding_context/summary.md) | ✅ 完了 | 2026/06/26 |
 | 07 | [Making changes](reference/06---Claude_Code_in_Action/07_Making_changes/summary.md) | ✅ 完了 | 2026/06/26 |
-| 08 | [Controlling context](reference/06---Claude_Code_in_Action/08_Conrolling_context/summary.md) | ✅ 完了 | 2026/06/27 |
+| 08 | [Controlling context](reference/06---Claude_Code_in_Action/08_Controlling_context/summary.md) | ✅ 完了 | 2026/06/27 |
 
 ## ディレクトリ構成
 
