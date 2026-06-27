@@ -50,6 +50,7 @@
 | 06 | [Adding context](reference/06---Claude_Code_in_Action/06_Adding_context/summary.md) | ✅ 完了 | 2026/06/26 |
 | 07 | [Making changes](reference/06---Claude_Code_in_Action/07_Making_changes/summary.md) | ✅ 完了 | 2026/06/26 |
 | 08 | [Controlling context](reference/06---Claude_Code_in_Action/08_Controlling_context/summary.md) | ✅ 完了 | 2026/06/27 |
+| 09 | [Custom command](reference/06---Claude_Code_in_Action/09_Custom_command/summary.md) | ✅ 完了 | 2026/06/27 |
 
 ## ディレクトリ構成
 
