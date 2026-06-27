@@ -51,6 +51,7 @@
 | 07 | [Making changes](reference/06---Claude_Code_in_Action/07_Making_changes/summary.md) | ✅ 完了 | 2026/06/26 |
 | 08 | [Controlling context](reference/06---Claude_Code_in_Action/08_Controlling_context/summary.md) | ✅ 完了 | 2026/06/27 |
 | 09 | [Custom command](reference/06---Claude_Code_in_Action/09_Custom_command/summary.md) | ✅ 完了 | 2026/06/27 |
+| 10 | [MCP servers with Claude Code](reference/06---Claude_Code_in_Action/10_MCP_servers_with_Claude_Code/summary.md) | ✅ 完了 | 2026/06/27 |
 
 ## ディレクトリ構成
 
