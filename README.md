@@ -55,6 +55,7 @@
 | 11 | [GitHub integration](reference/06---Claude_Code_in_Action/11_GitHub_integration/summary.md) | ✅ 完了 | 2026/06/27 |
 | 12 | [Introducing hooks](reference/06---Claude_Code_in_Action/12_Introducing_hooks/summary.md) | ✅ 完了 | 2026/06/28 |
 | 13 | [Define Hooks](reference/06---Claude_Code_in_Action/13_Defining_hooks/summary.md) | ✅ 完了 | 2026/06/28 |
+| 14 | [Implementing a hook](reference/06---Claude_Code_in_Action/14_Implementing_a_hook/summary.md) | ✅ 完了 | 2026/06/28 |
 
 ## ディレクトリ構成
 
