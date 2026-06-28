@@ -7,6 +7,23 @@
   - **PreToolUse** : Claudeができることをコントロールする
   - **PostToolUse**： Claudeが処理した内容について、追加で処理させる
 
+```mermaid
+sequenceDiagram
+    You ->> Claude Code : prompt
+    Claude Code ->> Claude (language model): prompt + ツールの定義
+    Claude (language model) -->> Claude Code: ツールの指示
+    rect rgb(200, 10, 55)
+    Claude Code ->> Claude Code: PreToolUse hook
+    end
+    Claude Code ->> Claude Code: ツールを使う
+    rect rgb(10, 55, 200)
+    Claude Code ->> Claude Code: PostToolUse hook
+    end
+    Claude Code ->> Claude (language model): コンテンツを渡す
+    Claude (language model) -->> Claude Code: promptに対するAnswer
+    Claude Code -->> You: promptに対するAnswer
+```
+
 - 設定
   - 以下のファイルを手動で書くか、`/hooks`というコマンドをClaude Code上で打って設定する。
     - **Global**: `~/.claude/settings.json`
@@ -44,22 +61,6 @@
 }
 ```
 
-```mermaid
-sequenceDiagram
-    You ->> Claude Code : prompt
-    Claude Code ->> Claude (language model): prompt + ツールの定義
-    Claude (language model) -->> Claude Code: ツールの指示
-    rect rgb(200, 10, 55)
-    Claude Code ->> Claude Code: PreToolUse hook
-    end
-    Claude Code ->> Claude Code: ツールを使う
-    rect rgb(10, 55, 200)
-    Claude Code ->> Claude Code: PostToolUse hook
-    end
-    Claude Code ->> Claude (language model): コンテンツを渡す
-    Claude (language model) -->> Claude Code: promptに対するAnswer
-    Claude Code -->> You: promptに対するAnswer
-```
 
 ### Note/Tips
 
