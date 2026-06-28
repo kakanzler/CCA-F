@@ -53,6 +53,7 @@
 | 09 | [Custom command](reference/06---Claude_Code_in_Action/09_Custom_command/summary.md) | ✅ 完了 | 2026/06/27 |
 | 10 | [MCP servers with Claude Code](reference/06---Claude_Code_in_Action/10_MCP_servers_with_Claude_Code/summary.md) | ✅ 完了 | 2026/06/27 |
 | 11 | [GitHub integration](reference/06---Claude_Code_in_Action/11_GitHub_integration/summary.md) | ✅ 完了 | 2026/06/27 |
+| 12 | [Introducing hooks](reference/06---Claude_Code_in_Action/12_Introducing_hooks/summary.md) | ✅ 完了 | 2026/06/28 |
 
 ## ディレクトリ構成
 
