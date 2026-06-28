@@ -1,6 +1,6 @@
 # commit-refined-summary
 
-`/refine-summary` 実行後、手動で修正した summary.md / origin.md をコミットしてプッシュするコマンド。直前に編集していたモジュールのフォルダ **のみ** を対象にする。
+`/refine-summary` 実行後、手動で修正した summary.md / origin.md および同ディレクトリに配置した画像などのアセットをコミットしてプッシュするコマンド。直前に編集していたモジュールのフォルダ **のみ** を対象にする。
 
 ## Steps
 
@@ -12,12 +12,12 @@
    - `YY` = モジュール番号（例: `07`）
    - `bbbbb` = モジュール名（例: `Code_Review`）。コミットメッセージでは読みやすいよう `_` を空白に置き換える（例: `Code Review`）。
 
-4. 対象ディレクトリの origin.md と summary.md のみをステージする。**他のフォルダの変更や README.md など、対象ディレクトリ外のファイルはステージしない。**
+4. 対象ディレクトリ配下を丸ごとステージする。origin.md / summary.md に加え、配置した画像などのアセットも対象に含める。**他のフォルダの変更や README.md など、対象ディレクトリ外のファイルはステージしない。**
    ```sh
-   git add reference/XX---aaaaa/YY_bbbbb/origin.md reference/XX---aaaaa/YY_bbbbb/summary.md
+   git add reference/XX---aaaaa/YY_bbbbb/
    ```
 
-5. ステージ内容を `git status --short` で確認し、対象ディレクトリの2ファイルだけが含まれていることを検証する。想定外のファイルが含まれていたら中断してユーザーに報告する。
+5. ステージ内容を `git status --short` で確認し、対象ディレクトリ配下のファイルだけが含まれていることを検証する。対象ディレクトリ外のファイルが含まれていたら中断してユーザーに報告する。
 
 6. 以下の形式でコミットする:
    ```
