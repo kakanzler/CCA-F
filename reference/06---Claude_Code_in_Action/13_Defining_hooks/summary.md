@@ -19,7 +19,7 @@
        - **Task** : SubAgentを起動し、特定のタスクについて処理させる
        - **WebFetch** : 特定のページの最新情報を取得する
        - **WebSearch** : 特定のページの情報を検索する
-  3. Claude(言語モデル)から、ClaudeCodeにツールの呼び出し指示がJSON形式で入力されるので、それに対するツールの呼び出しコマンドを`.claude/hooks/`以下に `{COMMAND_NAME}.sh`などを記載し、 `settings.json` にそのコマンドの呼び出しを書く。なお、Typeがcommandの場合はシェルファイルのみ有効。
+  3. Claude(言語モデル)から、ClaudeCodeにツールの呼び出し指示がJSON形式で入力されるので、それに対するツールの呼び出しコマンドを`.claude/hooks/`以下に `{COMMAND_NAME}.sh`などを記載し、 `settings.json` にそのコマンドの呼び出しを書く。。
   4. ツールを呼び出した結果、エラーハンドリングが必要な場合は`{COMMAND_NAME}.sh` に明記する。
      - `Exit Code: 0` : 正常
      - `Exit Code: 2` : 異常 (PreToolUseの場合はブロック。) ⇒ stderrをClaudeに返却し、なぜ制限されていたのか、などをClaudeに説明する。
@@ -27,6 +27,8 @@
 ### Note/Tips
 
 - MCP_Serverを追加すると利用可能なToolが変更される可能性があるので、Claudeに現在使えるToolを一覧形式でくれ、などと依頼することは度々有効。
+
+- Hookのcommandについて、Typeがcommandの場合はシェルコマンドが実行されるので `node ~~ $PWD/hooks/read_hook.js`のようにJSのHookを起動させることも可能。シェルスクリプトのみが有効ではない点に注意。
 
 ## Supplement
 
