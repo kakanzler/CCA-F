@@ -59,6 +59,7 @@
 | 15 | [Gotchas around hooks](reference/06---Claude_Code_in_Action/15_Gotchas_around_hooks/summary.md) | ✅ 完了 | 2026/06/30 |
 | 16 | [Useful hooks!](reference/06---Claude_Code_in_Action/16_Useful_hooks/summary.md) | ✅ 完了 | 2026/06/30 |
 | 17 | [Another useful hook](reference/06---Claude_Code_in_Action/17_Another_useful_hook/summary.md) | ✅ 完了 | 2026/07/01 |
+| 18 | [The Claude Code SDK](reference/06---Claude_Code_in_Action/18_The_Claude_code_SDK/summary.md) | ✅ 完了 | 2026/07/01 |
 
 ## ディレクトリ構成
 
