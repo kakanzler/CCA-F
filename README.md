@@ -58,6 +58,7 @@
 | 14 | [Implementing a hook](reference/06---Claude_Code_in_Action/14_Implementing_a_hook/summary.md) | ✅ 完了 | 2026/06/28 |
 | 15 | [Gotchas around hooks](reference/06---Claude_Code_in_Action/15_Gotchas_around_hooks/summary.md) | ✅ 完了 | 2026/06/30 |
 | 16 | [Useful hooks!](reference/06---Claude_Code_in_Action/16_Useful_hooks/summary.md) | ✅ 完了 | 2026/06/30 |
+| 17 | [Another useful hook](reference/06---Claude_Code_in_Action/17_Another_useful_hook/summary.md) | ✅ 完了 | 2026/07/01 |
 
 ## ディレクトリ構成
 
