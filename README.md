@@ -61,6 +61,12 @@
 | 17 | [Another useful hook](reference/06---Claude_Code_in_Action/17_Another_useful_hook/summary.md) | ✅ 完了 | 2026/07/01 |
 | 18 | [The Claude Code SDK](reference/06---Claude_Code_in_Action/18_The_Claude_code_SDK/summary.md) | ✅ 完了 | 2026/07/01 |
 
+### 07 — [Introduction to subagents](reference/07---Introduction_to_subagents/)
+
+| # | モジュール | ステータス | 完了日|
+|---|---|---|---|
+| 01 | [What are subagents?](reference/07---Introduction_to_subagents/01_Wath_are_subagents/summary.md) | ✅ 完了 | 2026/07/02 |
+
 ## ディレクトリ構成
 
 ```
