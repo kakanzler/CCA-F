@@ -66,6 +66,7 @@
 | # | モジュール | ステータス | 完了日|
 |---|---|---|---|
 | 01 | [What are subagents?](reference/07---Introduction_to_subagents/01_Wath_are_subagents/summary.md) | ✅ 完了 | 2026/07/02 |
+| 02 | [Creating a subagent](reference/07---Introduction_to_subagents/02_Creating_a_subagent/summary.md) | ✅ 完了 | 2026/07/03 |
 
 ## ディレクトリ構成
 
