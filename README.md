@@ -67,6 +67,7 @@
 |---|---|---|---|
 | 01 | [What are subagents?](reference/07---Introduction_to_subagents/01_Wath_are_subagents/summary.md) | ✅ 完了 | 2026/07/02 |
 | 02 | [Creating a subagent](reference/07---Introduction_to_subagents/02_Creating_a_subagent/summary.md) | ✅ 完了 | 2026/07/03 |
+| 03 | [Designing effective subagents](reference/07---Introduction_to_subagents/03_Designing_effective_subagents/summary.md) | ✅ 完了 | 2026/07/04 |
 
 ## ディレクトリ構成
 
