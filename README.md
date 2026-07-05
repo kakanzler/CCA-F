@@ -75,6 +75,7 @@
 | # | モジュール | ステータス | 完了日|
 |---|---|---|---|
 | 01 | [What are skills](reference/08---Introduction_to_Agent_skills/01_What_are_skills/summary.md) | ✅ 完了 | 2026/07/05 |
+| 02 | [Creating your first skill](reference/08---Introduction_to_Agent_skills/02_Creating_your_first_skill/summary.md) | ✅ 完了 | 2026/07/05 |
 
 ## ディレクトリ構成
 
