@@ -17,7 +17,7 @@
 
 ### Note/Tips
 
-| vs  | 使用ケース/例 |
+|   | 使用ケース/例 |
 |---|---|
 |`CLAUDE.md`  | - Project全体に広く適用できる標準的ルールを記載したいケース <br>---> 絶対に禁止したい処理事項(DBの編集) <br>    ---> コーディング規約や利用するFrameWorkの好みの設定<br>|
 | *Subagents* |- Main ThreadのContext Windowとは切り離してタスクを別で処理したいケース <br> - Main Threadの会話からそれたツールを実行したいケース  |
