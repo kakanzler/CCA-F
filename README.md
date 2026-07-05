@@ -70,6 +70,12 @@
 | 03 | [Designing effective subagents](reference/07---Introduction_to_subagents/03_Designing_effective_subagents/summary.md) | ✅ 完了 | 2026/07/04 |
 | 04 | [Using subagents effectively](reference/07---Introduction_to_subagents/04_Using_subagents_effectively/summary.md) | ✅ 完了 | 2026/07/04 |
 
+### 08 — [Introduction to Agent skills](reference/08---Introduction_to_Agent_skills/)
+
+| # | モジュール | ステータス | 完了日|
+|---|---|---|---|
+| 01 | [What are skills](reference/08---Introduction_to_Agent_skills/01_What_are_skills/summary.md) | ✅ 完了 | 2026/07/05 |
+
 ## ディレクトリ構成
 
 ```
