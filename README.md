@@ -79,6 +79,7 @@
 | 03 | [Configuration and multi-file skills](reference/08---Introduction_to_Agent_skills/03_Configuration_and_multi-file_skills/summary.md) | ✅ 完了 | 2026/07/05 |
 | 04 | [Skills vs other Claude Code feature](reference/08---Introduction_to_Agent_skills/04_Skills_vs_other_Claude_Code_feature/summary.md) | ✅ 完了 | 2026/07/05 |
 | 05 | [Sharing skills](reference/08---Introduction_to_Agent_skills/05_Sharing_skills/summary.md) | ✅ 完了 | 2026/07/06 |
+| 06 | [Troubleshooting skills](reference/08---Introduction_to_Agent_skills/06_Troubleshooting_skills/summary.md) | ✅ 完了 | 2026/07/07 |
 
 ## ディレクトリ構成
 
