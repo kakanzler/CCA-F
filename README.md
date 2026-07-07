@@ -24,6 +24,12 @@
 | 12 | [Other ways to work with Claude](reference/01---Claude_101/12_Other_ways_to_work_with_Claude/summary.md) | ✅ 完了 | 2026/06/20 |
 | 13 | [What's next?](reference/01---Claude_101/13_Whats_next/summary.md) | ✅ 完了 | 2026/06/20 |
 
+### 03 — [Introduction_to_MCP](reference/03---Introduction_to_MCP/)
+
+| # | モジュール | ステータス | 完了日|
+|---|---|---|---|
+| 01 | [Welcome to the course](reference/03---Introduction_to_MCP/01_welcome_to_the_course/summary.md) | ✅ 完了 | 2026/07/07 |
+
 ### 05 — [Claude_Code_101](reference/05---Claude_Code_101/)
 
 | # | モジュール | ステータス | 完了日|
