@@ -31,6 +31,7 @@
 | 01 | [Welcome to the course](reference/03---Introduction_to_MCP/01_welcome_to_the_course/summary.md) | ✅ 完了 | 2026/07/07 |
 | 02 | [Introduction MCP](reference/03---Introduction_to_MCP/02_Introduction_MCP/summary.md) | ✅ 完了 | 2026/07/09 |
 | 03 | [MCP clients](reference/03---Introduction_to_MCP/03_MCP_clients/summary.md) | ✅ 完了 | 2026/07/12 |
+| 05 | [Defining tools with MCP](reference/03---Introduction_to_MCP/05_Defining_tools_with_MCP/summary.md) | ✅ 完了 | 2026/07/13 |
 
 ### 05 — [Claude_Code_101](reference/05---Claude_Code_101/)
 
