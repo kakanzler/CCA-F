@@ -36,6 +36,7 @@
 | 07 | Survey | ➖ 割愛 | 2026/07/25 |
 | 08 | [Implementing a client](reference/03---Introduction_to_MCP/08_Implementing_a_client/summary.md) | ✅ 完了 | 2026/07/25 |
 | 09 | [Defining resources](reference/03---Introduction_to_MCP/09_Defining_resources/summary.md) | ✅ 完了 | 2026/07/25 |
+| 10 | [Accessing resources](reference/03---Introduction_to_MCP/10_Accessing_resources/summary.md) | ✅ 完了 | 2026/07/25 |
 
 ### 05 — [Claude_Code_101](reference/05---Claude_Code_101/)
 
