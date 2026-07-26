@@ -39,6 +39,7 @@
 | 10 | [Accessing resources](reference/03---Introduction_to_MCP/10_Accessing_resources/summary.md) | ✅ 完了 | 2026/07/25 |
 | 11 | [Defining prompts](reference/03---Introduction_to_MCP/11_/summary.md) | ✅ 完了 | 2026/07/26 |
 | 12 | [Prompts in the client](reference/03---Introduction_to_MCP/12_Prompts_in_the_client/summary.md) | ✅ 完了 | 2026/07/26 |
+| 13 | Test | ➖ 割愛 | 2026/07/26 |
 | 14 | [MCP review](reference/03---Introduction_to_MCP/14_MCP_review/summary.md) | ✅ 完了 | 2026/07/26 |
 
 ### 05 — [Claude_Code_101](reference/05---Claude_Code_101/)
