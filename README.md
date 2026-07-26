@@ -38,6 +38,7 @@
 | 09 | [Defining resources](reference/03---Introduction_to_MCP/09_Defining_resources/summary.md) | ✅ 完了 | 2026/07/25 |
 | 10 | [Accessing resources](reference/03---Introduction_to_MCP/10_Accessing_resources/summary.md) | ✅ 完了 | 2026/07/25 |
 | 11 | [Defining prompts](reference/03---Introduction_to_MCP/11_/summary.md) | ✅ 完了 | 2026/07/26 |
+| 12 | [Prompts in the client](reference/03---Introduction_to_MCP/12_Prompts_in_the_client/summary.md) | ✅ 完了 | 2026/07/26 |
 
 ### 05 — [Claude_Code_101](reference/05---Claude_Code_101/)
 
