@@ -10,7 +10,7 @@
     - *Server*
       - 該当の`mcp.tool`で定義されたメソッド内を非同期に設計し、以下を記載する。
         - ログメッセージ：`context.info(str)`
-        - プログレスバー: `context.report_progress(現在の進捗:int、全体: int)`
+        - プログレスバー: `context.report_progress(現在の進捗:float、全体: float)`
     - *Client*
       - serverから非同期に送付される情報をcallback関数をserverに予約して実行する必要がある。それぞれ以下
       - `ClientSession(logging_callback=...)`
