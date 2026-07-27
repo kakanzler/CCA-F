@@ -46,6 +46,7 @@
 
 | # | モジュール | ステータス | 完了日|
 |---|---|---|---|
+| 01 | Let's get started | ➖ 割愛 | 2026/07/27 |
 | 02 | [Sampling](reference/04---MCP_Advanced_Topics/02_Sampling/summary.md) | ✅ 完了 | 2026/07/27 |
 
 ### 05 — [Claude_Code_101](reference/05---Claude_Code_101/)
