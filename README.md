@@ -51,6 +51,7 @@
 | 03 | [Sampling walkthrough](reference/04---MCP_Advanced_Topics/03_Sampling_workthrough/summary.md) | ✅ 完了 | 2026/07/27 |
 | 04 | [Log and progress notifications](reference/04---MCP_Advanced_Topics/04_Log_and_progress_notifications/summary.md) | ✅ 完了 | 2026/07/27 |
 | 05 | [Notifications walkthrough](reference/04---MCP_Advanced_Topics/05_Notifications_walkthrough/summary.md) | ✅ 完了 | 2026/07/27 |
+| 06 | [Roots](reference/04---MCP_Advanced_Topics/06_Roots/summary.md) | ✅ 完了 | 2026/07/28 |
 
 ### 05 — [Claude_Code_101](reference/05---Claude_Code_101/)
 
