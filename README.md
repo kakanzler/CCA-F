@@ -54,6 +54,7 @@
 | 06 | [Roots](reference/04---MCP_Advanced_Topics/06_Roots/summary.md) | ✅ 完了 | 2026/07/28 |
 | 07 | [Roots walkthrough](reference/04---MCP_Advanced_Topics/07_Roots_walkthrough/summary.md) | ✅ 完了 | 2026/07/29 |
 | 09 | [JSON message types](reference/04---MCP_Advanced_Topics/09_JSON_message_types/summary.md) | ✅ 完了 | 2026/07/30 |
+| 10 | [The STDIO transport](reference/04---MCP_Advanced_Topics/The_STDIO_transport/summary.md) | ✅ 完了 | 2026/07/31 |
 
 ### 05 — [Claude_Code_101](reference/05---Claude_Code_101/)
 
