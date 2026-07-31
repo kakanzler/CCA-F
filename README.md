@@ -56,6 +56,7 @@
 | 08 | Survey | ➖ 割愛 | 2026/07/31 |
 | 09 | [JSON message types](reference/04---MCP_Advanced_Topics/09_JSON_message_types/summary.md) | ✅ 完了 | 2026/07/30 |
 | 10 | [The STDIO transport](reference/04---MCP_Advanced_Topics/10_The_STDIO_transport/summary.md) | ✅ 完了 | 2026/07/31 |
+| 11 | [The StreamableHTTP transport](reference/04---MCP_Advanced_Topics/11_The_StreamableHTTP_transport/summary.md) | ✅ 完了 | 2026/07/31 |
 
 ### 05 — [Claude_Code_101](reference/05---Claude_Code_101/)
 
