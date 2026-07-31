@@ -53,6 +53,7 @@
 | 05 | [Notifications walkthrough](reference/04---MCP_Advanced_Topics/05_Notifications_walkthrough/summary.md) | ✅ 完了 | 2026/07/27 |
 | 06 | [Roots](reference/04---MCP_Advanced_Topics/06_Roots/summary.md) | ✅ 完了 | 2026/07/28 |
 | 07 | [Roots walkthrough](reference/04---MCP_Advanced_Topics/07_Roots_walkthrough/summary.md) | ✅ 完了 | 2026/07/29 |
+| 08 | Survey | ➖ 割愛 | 2026/07/31 |
 | 09 | [JSON message types](reference/04---MCP_Advanced_Topics/09_JSON_message_types/summary.md) | ✅ 完了 | 2026/07/30 |
 | 10 | [The STDIO transport](reference/04---MCP_Advanced_Topics/10_The_STDIO_transport/summary.md) | ✅ 完了 | 2026/07/31 |
 
