@@ -58,6 +58,7 @@
 | 10 | [The STDIO transport](reference/04---MCP_Advanced_Topics/10_The_STDIO_transport/summary.md) | ✅ 完了 | 2026/07/31 |
 | 11 | [The StreamableHTTP transport](reference/04---MCP_Advanced_Topics/11_The_StreamableHTTP_transport/summary.md) | ✅ 完了 | 2026/07/31 |
 | 12 | [StreamableHTTP in Depth](reference/04---MCP_Advanced_Topics/12_StreamableHTTP_in_Depth/summary.md) | ✅ 完了 | 2026/08/01 |
+| 13 | [State and the StreamableHTTP transport](reference/04---MCP_Advanced_Topics/13_/summary.md) | ✅ 完了 | 2026/08/01 |
 
 ### 05 — [Claude_Code_101](reference/05---Claude_Code_101/)
 
