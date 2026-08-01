@@ -24,6 +24,12 @@
 | 12 | [Other ways to work with Claude](reference/01---Claude_101/12_Other_ways_to_work_with_Claude/summary.md) | ✅ 完了 | 2026/06/20 |
 | 13 | [What's next?](reference/01---Claude_101/13_Whats_next/summary.md) | ✅ 完了 | 2026/06/20 |
 
+### 02 — [Building with the Claude API](reference/02---Building_with_the_Claude_API/)
+
+| # | モジュール | ステータス | 完了日|
+|---|---|---|---|
+| 02 | [Overview of Claude models](reference/02---Building_with_the_Claude_API/02_Overview_of_Claude_models/summary.md) | ✅ 完了 | 2026/08/01 |
+
 ### 03 — [Introduction_to_MCP](reference/03---Introduction_to_MCP/)
 
 | # | モジュール | ステータス | 完了日|
