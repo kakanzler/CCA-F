@@ -30,6 +30,7 @@
 |---|---|---|---|
 | 02 | [Overview of Claude models](reference/02---Building_with_the_Claude_API/02_Overview_of_Claude_models/summary.md) | ✅ 完了 | 2026/08/01 |
 | 03 | [Accessing the API](reference/02---Building_with_the_Claude_API/03_Accessing_the_API/summary.md) | ✅ 完了 | 2026/08/01 |
+| 04 | Getting an API key | ➖ 割愛 | 2026/08/02 |
 
 ### 03 — [Introduction_to_MCP](reference/03---Introduction_to_MCP/)
 
