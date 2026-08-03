@@ -34,6 +34,7 @@
 | 05 | [Making a request](reference/02---Building_with_the_Claude_API/05_Making_a_request/summary.md) | ✅ 完了 | 2026/08/02 |
 | 06 | [Multi-Turn conversations](reference/02---Building_with_the_Claude_API/06_Multi-Turn_conversations/summary.md) | ✅ 完了 | 2026/08/03 |
 | 07 | Chat exercise | ➖ 割愛 | 2026/08/03 |
+| 08 | [System prompts](reference/02---Building_with_the_Claude_API/08_System_prompts/summary.md) | ✅ 完了 | 2026/08/03 |
 
 ### 03 — [Introduction_to_MCP](reference/03---Introduction_to_MCP/)
 
