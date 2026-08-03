@@ -37,6 +37,7 @@
 | 08 | [System prompts](reference/02---Building_with_the_Claude_API/08_System_prompts/summary.md) | ✅ 完了 | 2026/08/03 |
 | 10 | [Temperature](reference/02---Building_with_the_Claude_API/10_Temperature/summary.md) | ✅ 完了 | 2026/08/03 |
 | 12 | [Response streaming](reference/02---Building_with_the_Claude_API/12_Response_streaming/summary.md) | ✅ 完了 | 2026/08/03 |
+| 13 | [Structured data](reference/02---Building_with_the_Claude_API/13_Structured_data/summary.md) | ✅ 完了 | 2026/08/04 |
 
 ### 03 — [Introduction_to_MCP](reference/03---Introduction_to_MCP/)
 
