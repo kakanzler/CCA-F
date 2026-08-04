@@ -12,7 +12,7 @@
             "type":"object",
             "properties": {
                 "引数名": {
-                    "type": ,
+                    "type": "引数の型",
                     "description": "引数の説明",
                     "default": "default値"
                 }
@@ -39,7 +39,7 @@
 ## Supplement
 
 - JSON Schema自体はAI/tool calling専用の仕様ではなく、以前から広く使われている**汎用のデータ検証仕様**。AI界隈が「関数の引数を記述するのに便利」という理由で流用しているだけ。
-- `input_schema` の中身は素のJSON Schema。`type: "object"` / `properties`（各引数の型・説明・default）/ `required`（必須引数名の配列）が基本形。default があり省略可能な引数は `required` を空配列にする。
+- `input_schema` において、`type: "object"`は固定。また引数名の中に`default`があり省略可能な引数では `required` （必須引数名の配列）を空配列にする。
 - 命名規約: 関数 `foo` に対してスキーマは `foo_schema` と命名する。関数とスキーマの対応が一目で分かるようにするため。
 - `ToolParam` は機能上必須ではない（Dictのままでも動く）。API呼び出し時の型エラーを事前に検出するためのもの。
 
