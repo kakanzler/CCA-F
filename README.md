@@ -51,6 +51,7 @@
 | 37 | [Mulit-turn conversations with tools](reference/02---Building_with_the_Claude_API/37_Mulit-turn_conversations_with_tools/summary.md) | ✅ 完了 | 2026/08/04 |
 | 38 | [Implementing multiple turns](reference/02---Building_with_the_Claude_API/38_Implementing_multiple_turns/summary.md) | ✅ 完了 | 2026/08/04 |
 | 39 | [Using multiple tools](reference/02---Building_with_the_Claude_API/39_Using_multiple_tools/summary.md) | ✅ 完了 | 2026/08/04 |
+| 40 | [Fine grained tool calling](reference/02---Building_with_the_Claude_API/40_Fine_grained_tool_calling/summary.md) | ✅ 完了 | 2026/08/05 |
 
 ### 03 — [Introduction_to_MCP](reference/03---Introduction_to_MCP/)
 
