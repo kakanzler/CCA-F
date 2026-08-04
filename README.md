@@ -49,6 +49,7 @@
 | 35 | [Handling message blocks](reference/02---Building_with_the_Claude_API/35_Handling_message_blocks/summary.md) | ✅ 完了 | 2026/08/04 |
 | 36 | [Sending tool result](reference/02---Building_with_the_Claude_API/36_Sending_tool_result/summary.md) | ✅ 完了 | 2026/08/04 |
 | 37 | [Mulit-turn conversations with tools](reference/02---Building_with_the_Claude_API/37_Mulit-turn_conversations_with_tools/summary.md) | ✅ 完了 | 2026/08/04 |
+| 38 | [Implementing multiple turns](reference/02---Building_with_the_Claude_API/38_Implementing_multiple_turns/summary.md) | ✅ 完了 | 2026/08/04 |
 
 ### 03 — [Introduction_to_MCP](reference/03---Introduction_to_MCP/)
 
