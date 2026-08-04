@@ -46,6 +46,7 @@
 | 32 | Project overview | ➖ 割愛 | 2026/08/04 |
 | 33 | [Tool functions](reference/02---Building_with_the_Claude_API/33_Tool_functions/summary.md) | ✅ 完了 | 2026/08/04 |
 | 34 | [Tool schema](reference/02---Building_with_the_Claude_API/34_Tool_schema/summary.md) | ✅ 完了 | 2026/08/04 |
+| 35 | [Handling message blocks](reference/02---Building_with_the_Claude_API/35_Handling_message_blocks/summary.md) | ✅ 完了 | 2026/08/04 |
 
 ### 03 — [Introduction_to_MCP](reference/03---Introduction_to_MCP/)
 
