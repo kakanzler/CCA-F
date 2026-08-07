@@ -54,7 +54,8 @@
 | 40 | [Fine grained tool calling](reference/02---Building_with_the_Claude_API/40_Fine_grained_tool_calling/summary.md) | ✅ 完了 | 2026/08/05 |
 | 41 | [the text edit tool](reference/02---Building_with_the_Claude_API/41_the_text_edit_tool/summary.md) | ✅ 完了 | 2026/08/05 |
 | 42 | [The web search tool](reference/02---Building_with_the_Claude_API/42_The_web_search_tool/summary.md) | ✅ 完了 | 2026/08/06 |
-| 75 | [Agents and workflows](reference/02---Building_with_the_Claude_API/75_Agents_and_workflows/summary.md) | ✅ 完了 | 2026/08/07 |
+| 76 | [Agents and workflows](reference/02---Building_with_the_Claude_API/76_Agents_and_workflows/summary.md) | ✅ 完了 | 2026/08/07 |
+| 77 | [Parallelization workflows](reference/02---Building_with_the_Claude_API/77_Parallelization_workflows/summary.md) | ✅ 完了 | 2026/08/07 |
 
 ### 03 — [Introduction_to_MCP](reference/03---Introduction_to_MCP/)
 
