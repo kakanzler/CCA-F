@@ -57,6 +57,7 @@
 | 76 | [Agents and workflows](reference/02---Building_with_the_Claude_API/76_Agents_and_workflows/summary.md) | ✅ 完了 | 2026/08/07 |
 | 77 | [Parallelization workflows](reference/02---Building_with_the_Claude_API/77_Parallelization_workflows/summary.md) | ✅ 完了 | 2026/08/07 |
 | 78 | [Chaining workflows](reference/02---Building_with_the_Claude_API/78_Changing_workflows/summary.md) | ✅ 完了 | 2026/08/07 |
+| 79 | [Routing workflows](reference/02---Building_with_the_Claude_API/79_Routing_workdlows/summary.md) | ✅ 完了 | 2026/08/08 |
 
 ### 03 — [Introduction_to_MCP](reference/03---Introduction_to_MCP/)
 
