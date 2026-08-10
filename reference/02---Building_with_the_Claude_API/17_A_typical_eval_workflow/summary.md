@@ -12,13 +12,14 @@
     Graderを通してFeedする --> Promptの草案を作る
     ```
 
-  1. Promptの草案を作る
-  2. Evalのデータセットを作る
+  1. Evalのデータセットを作る
      - datasetには様々なタイプの質問や本番で想定される要求のinputのsampleが含まれる。
      - promptにPlaceholderがあればそれを埋め込まれた形の質問も含まれる。
+     - データセット作成はEvalでは固定する必要があるため、最初に固定しループの外に配置する。
 
+  2. Promptの草案を作る
   3. Claudeを通してFeedする
-     - 2で作成したデータセットからpromptを一つ一つLLMへ送信し回答を得る
+     - 1で作成したデータセットからpromptを一つ一つLLMへ送信し回答を得る
   4. Graderを通してFeedする
      - 入力したPromptとClaudeから得られたAnswerをセットでGraderに入力し、評価を得る。
      - データセットに対する評価結果はそれらの加算平均とする。
