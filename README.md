@@ -43,6 +43,7 @@
 | 14 | Structured data exercise | ➖ 割愛 | 2026/08/04 |
 | 15 | Quiz on accessing Claude with the API | ➖ 割愛 | 2026/08/04 |
 | 16 | [Prompt evaluation](reference/02---Building_with_the_Claude_API/16_Prompt_evaluation/summary.md) | ✅ 完了 | 2026/08/10 |
+| 17 | [A typical eval workflow](reference/02---Building_with_the_Claude_API/17_A_typical_eval_workflow/summary.md) | ✅ 完了 | 2026/08/10 |
 | 31 | [Introduction tool use](reference/02---Building_with_the_Claude_API/31_Introduction_tool_use/summary.md) | ✅ 完了 | 2026/08/04 |
 | 32 | Project overview | ➖ 割愛 | 2026/08/04 |
 | 33 | [Tool functions](reference/02---Building_with_the_Claude_API/33_Tool_functions/summary.md) | ✅ 完了 | 2026/08/04 |
