@@ -49,7 +49,8 @@
 | 20 | [Model based grading](reference/02---Building_with_the_Claude_API/20_Model_based_grading/summary.md) | ✅ 完了 | 2026/08/11 |
 | 21 | [Code based grading](reference/02---Building_with_the_Claude_API/21_Code_based_grading/summary.md) | ✅ 完了 | 2026/08/11 |
 | 22 | [Exercise on prompts evals](reference/02---Building_with_the_Claude_API/22_Exercise_on_prompts_evals/summary.md) | ➖ 割愛 | 2026/08/11 |
-| 23 | Quiz on prompt evaluation | ➖ 割愛 | 2026/08/11 |
+| - | Quiz on prompt evaluation | ➖ 割愛 | 2026/08/11 |
+| 23 | [Prompt engineering](reference/02---Building_with_the_Claude_API/23_Prompt_engineering/summary.md) | ✅ 完了 | 2026/08/12 |
 | 31 | [Introduction tool use](reference/02---Building_with_the_Claude_API/31_Introduction_tool_use/summary.md) | ✅ 完了 | 2026/08/04 |
 | 32 | Project overview | ➖ 割愛 | 2026/08/04 |
 | 33 | [Tool functions](reference/02---Building_with_the_Claude_API/33_Tool_functions/summary.md) | ✅ 完了 | 2026/08/04 |
