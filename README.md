@@ -46,6 +46,7 @@
 | 17 | [A typical eval workflow](reference/02---Building_with_the_Claude_API/17_A_typical_eval_workflow/summary.md) | ✅ 完了 | 2026/08/10 |
 | 18 | [Generating test datasets](reference/02---Building_with_the_Claude_API/18_Generating_test_datasets/summary.md) | ✅ 完了 | 2026/08/11 |
 | 19 | [running the eval](reference/02---Building_with_the_Claude_API/19_running_the_eval/summary.md) | ✅ 完了 | 2026/08/11 |
+| 20 | [Model based grading](reference/02---Building_with_the_Claude_API/20_Model_based_grading/summary.md) | ✅ 完了 | 2026/08/11 |
 | 31 | [Introduction tool use](reference/02---Building_with_the_Claude_API/31_Introduction_tool_use/summary.md) | ✅ 完了 | 2026/08/04 |
 | 32 | Project overview | ➖ 割愛 | 2026/08/04 |
 | 33 | [Tool functions](reference/02---Building_with_the_Claude_API/33_Tool_functions/summary.md) | ✅ 完了 | 2026/08/04 |
