@@ -1,3 +1,8 @@
+---
+model: haiku
+description: refine 済みの summary.md / origin.md と同ディレクトリのアセットをコミットしてプッシュする
+---
+
 # commit-refined-summary
 
 `/refine-summary` 実行後、手動で修正した summary.md / origin.md および同ディレクトリに配置した画像などのアセットをコミットしてプッシュするコマンド。直前に編集していたモジュールのフォルダ **のみ** を対象にする。
