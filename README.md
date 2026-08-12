@@ -172,6 +172,13 @@
 | 05 | [Sharing skills](reference/08---Introduction_to_Agent_skills/05_Sharing_skills/summary.md) | ✅ 完了 | 2026/07/06 |
 | 06 | [Troubleshooting skills](reference/08---Introduction_to_Agent_skills/06_Troubleshooting_skills/summary.md) | ✅ 完了 | 2026/07/07 |
 
+
+### extra — [Batch Processing](Batch_processing/)
+
+| # | モジュール | ステータス | 完了日|
+|---|---|---|---|
+| 01 | [Batch processing](Batch_processing/summary.md) | ✅ 完了 | 2026/08/13 |
+
 ## ディレクトリ構成
 
 ```
