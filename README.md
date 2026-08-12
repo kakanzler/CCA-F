@@ -53,6 +53,7 @@
 | 24 | [Prompt engineering](reference/02---Building_with_the_Claude_API/24_Prompt_engineering/summary.md) | ✅ 完了 | 2026/08/12 |
 | 25 | [Being Clear and direct](reference/02---Building_with_the_Claude_API/25_Being_Clear_and_direct/summary.md) | ✅ 完了 | 2026/08/12 |
 | 26 | [Being specific](reference/02---Building_with_the_Claude_API/26_Being_specific/summary.md) | ✅ 完了 | 2026/08/12 |
+| 27 | [Structure with XML tags](reference/02---Building_with_the_Claude_API/27_Structure_with_XML_tags/summary.md) | ✅ 完了 | 2026/08/12 |
 | 31 | [Introduction tool use](reference/02---Building_with_the_Claude_API/31_Introduction_tool_use/summary.md) | ✅ 完了 | 2026/08/04 |
 | 32 | Project overview | ➖ 割愛 | 2026/08/04 |
 | 33 | [Tool functions](reference/02---Building_with_the_Claude_API/33_Tool_functions/summary.md) | ✅ 完了 | 2026/08/04 |
