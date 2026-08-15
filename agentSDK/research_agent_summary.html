@@ -1,0 +1,1024 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Research Agent Wiring</title>
+<style>
+  :root {
+    --bg:          #F5F7FA;
+    --surface:     #FFFFFF;
+    --surface-2:   #EBF0F5;
+    --ink:         #12161D;
+    --ink-2:       #39434F;
+    --muted:       #64707F;
+    --rule:        #D6DEE6;
+    --rule-soft:   #E5EBF1;
+    --accent:      #0C6079;
+    --accent-2:    #A34A16;
+    --danger:      #C0261B;
+    --danger-ink:  #8E1C14;
+    --danger-soft: #FCEBE8;
+    --danger-rule: #E9A79F;
+    --shadow:      0 1px 2px rgba(18,22,29,.05), 0 10px 28px -14px rgba(18,22,29,.2);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:          #0F1217;
+      --surface:     #171B22;
+      --surface-2:   #1E242D;
+      --ink:         #E7ECF2;
+      --ink-2:       #BAC4D0;
+      --muted:       #8B96A6;
+      --rule:        #2C333E;
+      --rule-soft:   #242A33;
+      --accent:      #5FC1DB;
+      --accent-2:    #E59A57;
+      --danger:      #FF7E6E;
+      --danger-ink:  #FF9F92;
+      --danger-soft: #33201D;
+      --danger-rule: #7A3A32;
+      --shadow:      0 1px 2px rgba(0,0,0,.45), 0 12px 32px -16px rgba(0,0,0,.75);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:          #0F1217;
+    --surface:     #171B22;
+    --surface-2:   #1E242D;
+    --ink:         #E7ECF2;
+    --ink-2:       #BAC4D0;
+    --muted:       #8B96A6;
+    --rule:        #2C333E;
+    --rule-soft:   #242A33;
+    --accent:      #5FC1DB;
+    --accent-2:    #E59A57;
+    --danger:      #FF7E6E;
+    --danger-ink:  #FF9F92;
+    --danger-soft: #33201D;
+    --danger-rule: #7A3A32;
+    --shadow:      0 1px 2px rgba(0,0,0,.45), 0 12px 32px -16px rgba(0,0,0,.75);
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    --sans: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Yu Gothic UI", Meiryo, sans-serif;
+    --mono: ui-monospace, "Cascadia Code", "Cascadia Mono", Consolas, "SFMono-Regular", "Yu Gothic UI", monospace;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 18px;
+    line-height: 1.78;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 60px 28px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+  }
+
+  .prose { max-width: 66ch; }
+
+  /* ---------- masthead ---------- */
+
+  .masthead { display: flex; flex-direction: column; gap: 20px; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(34px, 5vw, 52px);
+    line-height: 1.12;
+    letter-spacing: -.022em;
+    font-weight: 700;
+    text-wrap: balance;
+  }
+
+  .dek {
+    margin: 0;
+    max-width: 60ch;
+    font-size: 19px;
+    color: var(--ink-2);
+  }
+
+  .facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+    padding-top: 10px;
+    border-top: 1px solid var(--rule);
+    font-family: var(--mono);
+    font-size: 14px;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .facts b { color: var(--ink); font-weight: 600; }
+  .facts .hot { color: var(--danger); }
+
+  /* ---------- sections ---------- */
+
+  section { display: flex; flex-direction: column; gap: 22px; }
+
+  h2 {
+    margin: 0;
+    font-size: 14px;
+    font-family: var(--mono);
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--rule);
+  }
+  h2 span { color: var(--ink); }
+  h2 .hot { color: var(--danger); }
+
+  h3 {
+    margin: 0;
+    font-size: 21px;
+    letter-spacing: -.012em;
+    font-weight: 650;
+    text-wrap: balance;
+  }
+
+  p { margin: 0; }
+
+  code {
+    font-family: var(--mono);
+    font-size: .87em;
+    background: var(--surface-2);
+    border: 1px solid var(--rule-soft);
+    border-radius: 4px;
+    padding: .1em .34em;
+    color: var(--ink);
+  }
+  .hot code { background: var(--danger-soft); border-color: var(--danger-rule); color: var(--danger-ink); }
+
+  /* ---------- diagram plate ---------- */
+
+  .plate {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .plate-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 12px 18px;
+    background: var(--surface-2);
+    border-bottom: 1px solid var(--rule);
+    font-family: var(--mono);
+    font-size: 12.5px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .plate-head b { color: var(--ink); font-weight: 600; }
+  .plate-head .key { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; text-transform: none; letter-spacing: .02em; }
+  .plate-head .key i { font-style: normal; display: inline-flex; align-items: center; gap: 6px; }
+  .plate-head .key i::before {
+    content: "";
+    width: 11px; height: 11px;
+    border-radius: 2px;
+    border: 1.5px solid var(--accent);
+    background: var(--surface);
+  }
+  .plate-head .key i.hot::before { border-color: var(--danger); background: var(--danger-soft); }
+  .plate-head .key i.hot { color: var(--danger); }
+
+  .plate-body { overflow-x: auto; padding: 28px 18px; }
+  .plate-body .mermaid { margin: 0; display: flex; justify-content: center; min-width: min-content; }
+  .plate-body svg { max-width: none; height: auto; }
+
+  /* --- force mermaid to use our tokens in both themes --- */
+  .plate-body svg text,
+  .plate-body svg .nodeLabel,
+  .plate-body svg .stateLabel,
+  .plate-body svg .cluster-label,
+  .plate-body svg foreignObject div,
+  .plate-body svg foreignObject span,
+  .plate-body svg p {
+    fill: var(--ink) !important;
+    color: var(--ink) !important;
+    font-family: var(--mono) !important;
+  }
+  .plate-body svg .node rect,
+  .plate-body svg .node circle,
+  .plate-body svg .node polygon,
+  .plate-body svg .statediagram-state rect,
+  .plate-body svg rect.basic,
+  .plate-body svg .label-container {
+    fill: var(--surface) !important;
+    stroke: var(--accent) !important;
+    stroke-width: 1.4px !important;
+  }
+  .plate-body svg .cluster rect,
+  .plate-body svg .statediagram-cluster rect,
+  .plate-body svg .statediagram-cluster .outer,
+  .plate-body svg .statediagram-cluster .inner {
+    fill: var(--surface-2) !important;
+    stroke: var(--rule) !important;
+  }
+  .plate-body svg .statediagram-cluster .cluster-label text,
+  .plate-body svg .cluster-label span {
+    fill: var(--muted) !important;
+    color: var(--muted) !important;
+    font-weight: 600 !important;
+  }
+  .plate-body svg .edgePath path,
+  .plate-body svg path.transition,
+  .plate-body svg .flowchart-link {
+    stroke: var(--muted) !important;
+    fill: none !important;
+  }
+  .plate-body svg marker path,
+  .plate-body svg defs marker * {
+    fill: var(--muted) !important;
+    stroke: var(--muted) !important;
+  }
+  .plate-body svg .edgeLabel,
+  .plate-body svg .edgeLabel rect,
+  .plate-body svg .edgeLabel foreignObject div {
+    background: var(--surface) !important;
+    background-color: var(--surface) !important;
+    fill: var(--surface) !important;
+  }
+  .plate-body svg .edgeLabel span,
+  .plate-body svg .edgeLabel p,
+  .plate-body svg .edgeLabel text {
+    color: var(--ink-2) !important;
+    fill: var(--ink-2) !important;
+    background: var(--surface) !important;
+  }
+  /* start / end pseudo-states stay solid */
+  .plate-body svg .statediagram-state .start-state,
+  .plate-body svg circle.start-state,
+  .plate-body svg .end-state-inner,
+  .plate-body svg .end-state-outer {
+    fill: var(--ink) !important;
+    stroke: var(--ink) !important;
+  }
+  .plate-body svg .end-state-inner { fill: var(--surface) !important; }
+
+  /* --- exam-critical nodes, red --- */
+  .plate-body svg g.exam rect,
+  .plate-body svg g.exam .label-container,
+  .plate-body svg g.exam polygon {
+    fill: var(--danger-soft) !important;
+    stroke: var(--danger) !important;
+    stroke-width: 2.2px !important;
+  }
+  .plate-body svg g.exam text,
+  .plate-body svg g.exam .nodeLabel,
+  .plate-body svg g.exam foreignObject span,
+  .plate-body svg g.exam foreignObject div,
+  .plate-body svg g.exam p {
+    fill: var(--danger-ink) !important;
+    color: var(--danger-ink) !important;
+    font-weight: 700 !important;
+  }
+
+  .caption { font-size: 15.5px; color: var(--muted); max-width: 70ch; }
+
+  /* ---------- module cards ---------- */
+
+  .modules {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 18px;
+  }
+
+  .mod {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .mod-head {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--rule);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .mod-path {
+    font-family: var(--mono);
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--accent);
+    word-break: break-all;
+  }
+  .mod-role { font-size: 15px; color: var(--muted); line-height: 1.6; }
+
+  .mod-body { padding: 6px 0; display: flex; flex-direction: column; }
+
+  .sym {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 12px 20px;
+    border-top: 1px solid var(--rule-soft);
+  }
+  .sym:first-child { border-top: none; }
+  .sym-name {
+    font-family: var(--mono);
+    font-size: 14.5px;
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    line-height: 1.5;
+  }
+  .sym-desc { font-size: 15px; color: var(--ink-2); line-height: 1.68; }
+  .sym.nested { padding-left: 38px; position: relative; }
+  .sym.nested::before {
+    content: "";
+    position: absolute;
+    left: 22px; top: 0; bottom: 0;
+    border-left: 1px solid var(--rule);
+  }
+  .sym.hot { background: var(--danger-soft); }
+  .sym.hot .sym-name { color: var(--danger-ink); }
+  .sym.hot .sym-desc { color: var(--ink); }
+  .sym.hot.nested::before { border-color: var(--danger-rule); }
+
+  .tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    padding: 1px 7px;
+    border-radius: 3px;
+    border: 1px solid currentColor;
+    line-height: 1.7;
+    white-space: nowrap;
+  }
+  .tag.cls   { color: var(--accent-2); }
+  .tag.fn    { color: var(--accent); }
+  .tag.hook  { color: var(--accent-2); }
+  .tag.state { color: var(--muted); }
+  .tag.exam  { color: var(--danger); background: var(--danger-soft); font-weight: 700; }
+
+  /* ---------- notes ---------- */
+
+  .notes { display: flex; flex-direction: column; }
+  .note {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+    padding: 24px 0;
+    border-top: 1px solid var(--rule);
+  }
+  .note:last-child { border-bottom: 1px solid var(--rule); }
+  .note p { max-width: 76ch; color: var(--ink-2); font-size: 16.5px; }
+
+  @media (min-width: 780px) {
+    .note { grid-template-columns: 16rem minmax(0, 1fr); gap: 8px 36px; align-items: start; }
+  }
+
+  /* ---------- exam list ---------- */
+
+  .exam-intro {
+    font-size: 16.5px;
+    color: var(--ink-2);
+    max-width: 70ch;
+    border-left: 4px solid var(--danger);
+    padding-left: 18px;
+  }
+
+  .exam-list { display: flex; flex-direction: column; gap: 14px; }
+
+  .ex {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-left: 5px solid var(--danger);
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    padding: 18px 22px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  @media (min-width: 860px) {
+    .ex { grid-template-columns: 19rem minmax(0, 1fr); gap: 6px 32px; align-items: start; }
+  }
+  .ex-key {
+    font-family: var(--mono);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--danger-ink);
+    line-height: 1.55;
+    word-break: break-word;
+  }
+  .ex-body { font-size: 16px; color: var(--ink-2); line-height: 1.7; }
+  .ex-body b { color: var(--ink); font-weight: 650; }
+  .ex-src {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    color: var(--muted);
+    grid-column: 1 / -1;
+    padding-top: 4px;
+    border-top: 1px dashed var(--rule);
+  }
+
+  footer {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--muted);
+    border-top: 1px solid var(--rule);
+    padding-top: 18px;
+    line-height: 1.7;
+  }
+
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <header class="masthead">
+    <p class="eyebrow">agentSDK / research-agent</p>
+    <h1>research_agent の配線図</h1>
+    <p class="dek">
+      <code>agent.py</code> と <code>utils/</code> の 3 モジュールが、どのクラス・関数を経由して
+      「会話ストリーム」と「ツール呼び出しログ」の 2 本の流れを組み立てているか。
+      <span class="hot"><b style="color:var(--danger)">赤</b></span> は認定試験で問われやすい SDK の要点。
+    </p>
+    <div class="facts">
+      <span><b>4</b> modules</span>
+      <span><b>4</b> classes</span>
+      <span><b>4</b> module-level functions</span>
+      <span><b>15</b> methods</span>
+      <span><b>2</b> hooks</span>
+      <span class="hot"><b class="hot">14</b> exam points</span>
+      <span>SDK <b>0.2.134</b></span>
+    </div>
+  </header>
+
+  <section>
+    <h2><span>01</span> &nbsp;全体配線図 — 誰が誰を呼ぶか</h2>
+    <p class="prose caption">
+      外側の枠がファイル、その中の枠がクラス、ノードが関数・メソッド。
+      矢印は「呼び出し」または「生成・書き込み」で、ラベルは受け渡される中身。
+      赤いノードは SDK 固有の仕組みに直結する箇所。
+    </p>
+    <div class="plate">
+      <div class="plate-head">
+        <b>Fig. 01</b>
+        <span class="key"><i>通常</i><i class="hot">試験ポイント</i></span>
+        <span>module &middot; class &middot; callable</span>
+      </div>
+      <div class="plate-body">
+<pre class="mermaid">
+stateDiagram-v2
+    direction LR
+
+    state "agent.py" as MOD_AGENT {
+        state "chat()" as chat
+        state "load_prompt(filename)" as loadPrompt
+    }
+
+    state "utils/transcript.py" as MOD_TRANS {
+        state "setup_session()" as setupSession
+        state "class TranscriptWriter" as TW {
+            state "write()" as twWrite
+            state "write_to_file()" as twFile
+            state "close()" as twClose
+        }
+    }
+
+    state "utils/message_handler.py" as MOD_MSG {
+        state "process_assistant_message()" as procMsg
+        state "_tool_just_used" as flag
+    }
+
+    state "utils/subagent_tracker.py" as MOD_TRACK {
+        state "class SubagentTracker" as ST {
+            state "register_subagent_spawn()" as regSpawn
+            state "set_current_context()" as setCtx
+            state "pre_tool_use_hook()" as preHook
+            state "post_tool_use_hook()" as postHook
+            state "_log_tool_use()" as logUse
+            state "_format_tool_input()" as fmtIn
+            state "_log_to_jsonl()" as logJson
+            state "close()" as stClose
+        }
+        state "@dataclass SubagentSession" as SS
+        state "@dataclass ToolCallRecord" as TCR
+    }
+
+    chat --> loadPrompt : 4 本のプロンプトを読む
+    chat --> setupSession : logs/session_YYYYmmdd を作る
+    setupSession --> TW : transcript_file を渡す
+    chat --> ST : transcript_writer と session_dir を注入
+    chat --> preHook : HookMatcher PreToolUse
+    chat --> postHook : HookMatcher PostToolUse
+    chat --> procMsg : AssistantMessage ごとに
+    chat --> twClose : finally
+    chat --> stClose : finally
+
+    procMsg --> setCtx : parent_tool_use_id
+    procMsg --> flag : 改行の要否
+    procMsg --> twWrite : TextBlock の本文
+    procMsg --> regSpawn : ToolUseBlock が Task/Agent
+    regSpawn --> SS : 生成して sessions に登録
+
+    preHook --> TCR : 生成
+    TCR --> SS : session.tool_calls に追加
+    preHook --> logUse
+    preHook --> logJson : tool_call_start
+    logUse --> fmtIn : 入力を 1 行に要約
+    logUse --> twWrite : コンソール + ファイル
+    logUse --> twFile : Input 詳細はファイルのみ
+
+    postHook --> TCR : tool_output と error を書き戻す
+    postHook --> logJson : tool_call_complete
+
+    classDef exam stroke-width:2px
+    class chat exam
+    class procMsg exam
+    class setCtx exam
+    class regSpawn exam
+    class preHook exam
+    class postHook exam
+</pre>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>02</span> &nbsp;実行ライフサイクル — chat() の一生</h2>
+    <p class="prose caption">
+      同じ部品を時間軸で並べ直したもの。<code>chat()</code> は起動時に一度だけ配線し、
+      あとは入力ループを回すだけ。実際の記録は毎回フックが裏で行う。
+    </p>
+    <div class="plate">
+      <div class="plate-head">
+        <b>Fig. 02</b>
+        <span class="key"><i>通常</i><i class="hot">試験ポイント</i></span>
+        <span>runtime &middot; lifecycle</span>
+      </div>
+      <div class="plate-body">
+<pre class="mermaid">
+stateDiagram-v2
+    direction TB
+
+    state "ANTHROPIC_API_KEY の確認" as KeyCheck
+
+    [*] --> KeyCheck
+    KeyCheck --> [*] : 未設定なら何も作らず return
+    KeyCheck --> Setup : OK
+
+    state "セッション準備" as Setup {
+        state "setup_session()" as s1
+        state "TranscriptWriter()" as s2
+        state "SubagentTracker()" as s3
+        s1 --> s2
+        s2 --> s3
+    }
+
+    state "エージェント定義" as Define {
+        state "load_prompt() x4" as d1
+        state "AgentDefinition x3" as d2
+        state "hooks + ClaudeAgentOptions" as d3
+        d1 --> d2
+        d2 --> d3
+    }
+
+    Setup --> Define
+    Define --> Loop : async with ClaudeSDKClient
+
+    state "対話ループ" as Loop {
+        state "input()" as l1
+        state "client.query()" as l2
+        state "receive_response()" as l3
+        state "process_assistant_message()" as l4
+        l1 --> l2 : 入力を送信
+        l2 --> l3
+        l3 --> l4 : AssistantMessage
+        l4 --> l3 : 次のメッセージ
+        l3 --> l1 : 応答完了
+    }
+
+    Loop --> Teardown : exit / EOF / KeyboardInterrupt
+
+    state "後片付け" as Teardown {
+        state "transcript.close()" as t1
+        state "tracker.close()" as t2
+        state "保存先を表示" as t3
+        t1 --> t2
+        t2 --> t3
+    }
+
+    Teardown --> [*]
+
+    classDef exam stroke-width:2px
+    class d2 exam
+    class d3 exam
+    class l2 exam
+    class l3 exam
+</pre>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="hot"><span class="hot">03</span> &nbsp;試験ポイント — このコードから読み取れる SDK の要点</h2>
+    <p class="exam-intro">
+      配線そのものより、<b>「なぜその引数・その順序でないと動かないのか」</b>が問われる。
+      出典は本コードの実装と、インストール済み <code>claude_agent_sdk 0.2.134</code> の
+      <code>types.py</code> の定義・docstring。
+      <b>ただし解答の枠組みは Exam Guide を優先する。</b>
+      本コードは <code>permission_mode="bypassPermissions"</code> という<b>例外的な設定</b>を使っており、
+      実装の挙動をそのまま一般化すると出題意図から外れる箇所がある
+      （下の <code>Task</code> / <code>allowedTools</code> のカードを参照）。
+      バージョンで既定値が変わる項目もあるため、出典の行番号を併記している。
+    </p>
+    <div class="exam-list">
+
+      <div class="ex">
+        <div class="ex-key">ClaudeSDKClient は async with で開く</div>
+        <div class="ex-body">
+          単発の <code>query()</code> と違い、<code>ClaudeSDKClient</code> は<b>会話状態を保持する永続セッション</b>。
+          <code>async with</code> を抜けた時点でセッションが閉じるため、対話ループは必ずこのブロックの内側に置く。
+        </div>
+        <div class="ex-src">agent.py:132</div>
+      </div>
+
+      <div class="ex">
+        <div class="ex-key">description はルーティング用、権限は tools / disallowedTools</div>
+        <div class="ex-body">
+          <b>この 2 つを混同させるのが典型的な引っかけ。</b>
+          <code>description</code> は<b>親エージェントが「どれを呼ぶか」を判断する材料</b>にすぎず、強制力はない。
+          report-writer の description にある「Does NOT conduct web searches」は<b>制約ではなくルーティングのヒント</b>で、
+          実際に検索できないのは <code>tools</code> に <code>WebSearch</code> を入れていないから。
+          「researcher の後に使う」といった<b>順序や使いどころ</b>を書くのが description の役割。
+        </div>
+        <div class="ex-src">agent.py:53-91 / types.py:87-105</div>
+      </div>
+
+      <div class="ex">
+        <div class="ex-key">tools はサブエージェントごとの権限境界</div>
+        <div class="ex-body">
+          researcher は <code>WebSearch, Write</code>、data-analyst は <code>Glob, Read, Bash, Write</code>、
+          report-writer は <code>Write, Glob, Read, Bash</code>。
+          <b>親の権限は継承されず</b>、各サブエージェントは自分の <code>tools</code> に閉じる。
+          明示的に禁じたい場合は <code>AgentDefinition.disallowedTools</code> という<b>拒否リストも別に存在する</b>
+          （このコードでは使っておらず、許可リストである <code>tools</code> だけで境界を作っている）。
+          役割分離＝ツール分離、という設計がそのまま出題される。
+        </div>
+        <div class="ex-src">agent.py:62, 74, 87 / types.py:93-94</div>
+      </div>
+
+      <div class="ex">
+        <div class="ex-key">AgentDefinition は camelCase、ClaudeAgentOptions は snake_case</div>
+        <div class="ex-body">
+          同じ概念でも<b>クラスによって命名規約が違う</b>ので、そのまま書き写すと通らない。
+          <code>AgentDefinition</code> 側は <code>disallowedTools</code> / <code>maxTurns</code> /
+          <code>mcpServers</code> / <code>permissionMode</code> / <code>initialPrompt</code>、
+          <code>ClaudeAgentOptions</code> 側は <code>disallowed_tools</code> / <code>max_turns</code> /
+          <code>mcp_servers</code> / <code>permission_mode</code>。
+          なお <code>AgentDefinition.model</code> は <code>"sonnet"</code> などの別名のほか
+          <b><code>"inherit"</code>（親と同じモデル）</b>も受け付ける。
+        </div>
+        <div class="ex-src">types.py:87-105 vs types.py:1766-1866</div>
+      </div>
+
+      <div class="ex">
+        <div class="ex-key">Task が allowedTools に無ければサブエージェントは起動しない</div>
+        <div class="ex-body">
+          <b>「サブエージェントが起動しない根本原因は？」への正解はこれ。</b>
+          <code>Task</code> は<b>サブエージェント起動の機構そのもの</b>であり、
+          コーディネーターがそれを呼ぶには <code>allowedTools</code> に <code>"Task"</code> が含まれている必要がある。
+          <code>allowedTools</code> から <code>Task</code> を外したコーディネーターは、
+          <b>プロンプトにどれだけ委譲の意図を書いても手段を持たない</b>。
+          プロンプトの書き方・description の不足・model の選択などは<b>いずれも誤答の選択肢</b>になる。
+        </div>
+        <div class="ex-src">Exam Guide 1.3 / Purcell V2 3.1 &nbsp;|&nbsp; agent.py:113</div>
+      </div>
+
+      <div class="ex">
+        <div class="ex-key">なぜそうなるか — permission_mode が効いている</div>
+        <div class="ex-body">
+          機構としては <code>tools</code> が<b>使えるツールの母集合</b>、
+          <code>allowed_tools</code> は<b>確認を出さずに自動実行するリスト</b>、
+          <code>disallowed_tools</code> は<b>コンテキストから除去して使用不可にする</b>——という三者三様。
+          だが <code>permission_mode</code> が <code>"default"</code>（非対話セッションでは承認者がいない）や
+          <code>"dontAsk"</code>（<b>pre-approved でなければ拒否</b>）である通常のケースでは、
+          <b>「自動承認リストに無い」＝「実行されない」</b>になる。
+          だから上のカードの結論が成り立つ。
+          例外は <code>"bypassPermissions"</code> で、これは明示的 deny を除き全て自動承認するため
+          <code>allowed_tools</code> が事実上無効になる。
+          <b>本コードがまさにその例外設定</b>で、だからこそ確実に止めたい <code>Skill</code> は
+          <code>disallowed_tools</code> 側に書く必要があった
+          （組み込みスキルが数万トークンあり、読み込むと "Prompt is too long" になるため）。
+        </div>
+        <div class="ex-src">agent.py:110, 113-117 / types.py:1766-1855, 1813-1821</div>
+      </div>
+
+      <div class="ex">
+        <div class="ex-key">setting_sources は「有効化」ではなく「絞り込み」</div>
+        <div class="ex-body">
+          <b>方向を逆に覚えやすい。</b><code>None</code>（デフォルト）で<b>全ソースが読み込まれる</b>（CLI 既定と同じ）。
+          <code>[]</code> を渡すとファイルシステム設定を<b>すべて無効化</b>する（SDK 分離モード）。
+          <code>["project"]</code> は user / local を外して<b>プロジェクト設定だけに絞る</b>指定。
+          ただし <code>CLAUDE.md</code> を読ませるには <code>"project"</code> を含める必要がある。
+          <b>※旧バージョンでは既定で読み込まれなかった</b>ため、古い教材とは記述が食い違う場合がある。
+        </div>
+        <div class="ex-src">agent.py:111 / types.py:1990-2000（SDK 0.2.134）</div>
+      </div>
+
+      <div class="ex">
+        <div class="ex-key">HookMatcher(matcher=None) は全ツールにマッチ</div>
+        <div class="ex-body">
+          フックは <code>{'PreToolUse': [HookMatcher(matcher=..., hooks=[...])]}</code> という
+          <b>イベント名 → マッチャのリスト → コールバックのリスト</b>という 3 階層。
+          <code>matcher=None</code> で全ツール、文字列を渡せばツール名で絞り込む。
+        </div>
+        <div class="ex-src">agent.py:94-107</div>
+      </div>
+
+      <div class="ex">
+        <div class="ex-key">フックはツールではない — モデルからは見えない</div>
+        <div class="ex-body">
+          <b>description との対比で問われる最重要点。</b>
+          登録時にコールバックは <code>"hook_0"</code>, <code>"hook_1"</code> …という<b>文字列 ID に置き換えられ</b>、
+          関数本体は Python 側の <code>hook_callbacks</code> 辞書に留まる。CLI に渡るのは
+          <code>{"matcher": null, "hookCallbackIds": ["hook_0"]}</code> だけで、
+          <b>関数名も docstring も型もシリアライズされない</b>。
+          つまりモデルは「どのフックを呼ぶか」を判断しておらず、発火を決めるのは
+          <code>matcher</code>（<code>"Bash"</code> や <code>"Write|Edit"</code> のようなツール名文字列、
+          <code>None</code> で全ツール）である。
+          <b>AgentDefinition.description が「モデルに読ませる」ものなのに対し、フックは「ランタイムが機械的に発火させる」もの。</b>
+        </div>
+        <div class="ex-src">agent.py:94-107 / _internal/query.py:210-226</div>
+      </div>
+
+      <div class="ex">
+        <div class="ex-key">3 引数は位置だけの契約で、第 3 引数は将来用の空箱</div>
+        <div class="ex-body">
+          呼び出しは <code>await callback(input, tool_use_id, {"signal": None})</code> の固定 3 位置引数。
+          <b>仮引数名も型注釈も実行時には無関係</b>で、<code>HookCallback</code> 型は静的解析用にすぎない。
+          ワイヤ上を流れるのは <code>input</code> と <code>tool_use_id</code> の<b>2 つだけ</b>で、
+          第 3 引数の <code>context</code> は SDK がその場で <code>{"signal": None}</code> を作って渡している
+          （TypeScript SDK の AbortSignal に形を合わせた枠で、<b>現状は常に None</b>）。
+          中身は <code>PreToolUse</code> なら <code>hook_input['tool_name']</code> / <code>['tool_input']</code>、
+          <code>PostToolUse</code> なら <code>['tool_response']</code>。
+        </div>
+        <div class="ex-src">_internal/query.py:491-495 / types.py:567-584, 2164-2169</div>
+      </div>
+
+      <div class="ex">
+        <div class="ex-key">戻り値は辞書必須・continue_ は省略可・deny や引数書き換えもできる</div>
+        <div class="ex-body">
+          <code>SyncHookJSONOutput</code> は<b>全フィールドが NotRequired</b> で <code>continue_</code> の既定は True。
+          よって <code>{'continue_': True}</code> は<b>「何も干渉しない」を明示した形</b>で、<code>{}</code> でも等価。
+          ただし変換関数が <code>.items()</code> を呼ぶため <b><code>None</code> を返すと AttributeError</b> になる。
+          <code>continue_</code> / <code>async_</code> のアンダースコアはこの変換関数だけが面倒を見ているので、
+          素で <code>'continue'</code> と書くと変換ルートを外れる。
+          さらに <code>PreToolUse</code> の <code>hookSpecificOutput</code> では
+          <code>permissionDecision</code>（<b>allow / deny / ask / defer</b>）や
+          <code>updatedInput</code>（<b>ツール引数の差し替え</b>）が使え、
+          <code>PostToolUse</code> には <code>updatedToolOutput</code>（モデルに渡す前に出力を差し替え）がある。
+          <b><code>bypassPermissions</code> でもこの経路は生きている</b>ため、全呼び出しをゲートする唯一の手段になる。
+        </div>
+        <div class="ex-src">subagent_tracker.py:232, 271 / types.py:416-437, 520-561 / _internal/query.py:59-75</div>
+      </div>
+
+      <div class="ex">
+        <div class="ex-key">PreToolUse は実行前、PostToolUse は実行後</div>
+        <div class="ex-body">
+          Pre では<b>まだ結果が存在しない</b>ので入力しか記録できず、Post で初めて <code>tool_response</code> が入る。
+          そのためこのコードは Pre で <code>ToolCallRecord</code> を作って <code>tool_use_id</code> で索引し、
+          Post で同じ ID を引いて出力とエラーを埋める、という<b>2 相コミット型</b>になっている。
+        </div>
+        <div class="ex-src">subagent_tracker.py:196-205, 237-243</div>
+      </div>
+
+      <div class="ex">
+        <div class="ex-key">parent_tool_use_id がサブエージェント帰属の唯一の手がかり</div>
+        <div class="ex-body">
+          <code>AssistantMessage.parent_tool_use_id</code> は、そのメッセージが<b>どの Task 呼び出しの中で生まれたか</b>を示す。
+          <code>None</code> ならメインエージェント。フックはこの値を引数で受け取らないため、
+          メッセージ側で <code>set_current_context()</code> に渡して共有しておく必要がある。
+        </div>
+        <div class="ex-src">message_handler.py:21-22 / subagent_tracker.py:188</div>
+      </div>
+
+      <div class="ex">
+        <div class="ex-key">bypassPermissions は can_use_tool を無効化する</div>
+        <div class="ex-body">
+          <code>permission_mode="bypassPermissions"</code> は<b>確認プロンプトを出さず全ツールを自動承認</b>する設定。
+          このとき <code>can_use_tool</code> コールバックは<b>呼ばれなくなる</b>ため、
+          全ツール呼び出しを確実に捕まえたければ <b>PreToolUse フックを使う</b>——と SDK 自身が警告している。
+          このコードがフックで記録しているのは、まさにこの理由に沿った構成。
+          あわせて <code>max_turns=15</code> がループ暴走の安全弁になっている。
+        </div>
+        <div class="ex-src">agent.py:110, 121 / types.py:1704-1710</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2><span>04</span> &nbsp;モジュール別リファレンス</h2>
+    <div class="modules">
+
+      <article class="mod">
+        <div class="mod-head">
+          <div class="mod-path">research_agent/agent.py</div>
+          <div class="mod-role">組み立てと対話ループ。ここだけが他の 3 モジュールを知っている。</div>
+        </div>
+        <div class="mod-body">
+          <div class="sym">
+            <div class="sym-name"><span class="tag fn">fn</span> load_prompt(filename)</div>
+            <div class="sym-desc">prompts/ 配下のテキストを読んで返すだけ。lead / researcher / data_analyst / report_writer の 4 回呼ばれる。</div>
+          </div>
+          <div class="sym hot">
+            <div class="sym-name"><span class="tag fn">async</span> chat() <span class="tag exam">exam</span></div>
+            <div class="sym-desc">API キー確認 → セッション作成 → 3 つの AgentDefinition と 2 つの HookMatcher を組んで ClaudeSDKClient を起動 → 入力ループ → finally で両方を close。tools / allowed_tools / disallowed_tools / setting_sources / permission_mode / max_turns と、SDK の設定項目が集中する場所。</div>
+          </div>
+          <div class="sym">
+            <div class="sym-name"><span class="tag state">const</span> PROMPTS_DIR</div>
+            <div class="sym-desc">agent.py からの相対で prompts/ を指す。load_prompt() の基準。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="mod">
+        <div class="mod-head">
+          <div class="mod-path">utils/transcript.py</div>
+          <div class="mod-role">出力先の二重化。画面とファイルの両方に同じものを流す。</div>
+        </div>
+        <div class="mod-body">
+          <div class="sym">
+            <div class="sym-name"><span class="tag fn">fn</span> setup_session()</div>
+            <div class="sym-desc">logs/session_&lt;timestamp&gt;/ を作り、(transcript_file, session_dir) を返す。urllib3 のログも黙らせる。</div>
+          </div>
+          <div class="sym">
+            <div class="sym-name"><span class="tag cls">class</span> TranscriptWriter</div>
+            <div class="sym-desc">コンストラクタで transcript.txt を開き、以後そのハンドルを持ち続ける。</div>
+          </div>
+          <div class="sym nested">
+            <div class="sym-name">write(text, end, flush)</div>
+            <div class="sym-desc">print とファイル書き込みを同時に行う。ユーザーに見せたい出力はすべてここ。</div>
+          </div>
+          <div class="sym nested">
+            <div class="sym-name">write_to_file(text)</div>
+            <div class="sym-desc">ファイルだけに書く。ユーザー入力の記録と、ツール入力の詳細行に使われる。</div>
+          </div>
+          <div class="sym nested">
+            <div class="sym-name">close() / __enter__ / __exit__</div>
+            <div class="sym-desc">with 文でも使える形。実際の agent.py では finally で明示的に close している。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="mod">
+        <div class="mod-head">
+          <div class="mod-path">utils/message_handler.py</div>
+          <div class="mod-role">ストリームの解釈。tracker と transcript をつなぐ薄い層。</div>
+        </div>
+        <div class="mod-body">
+          <div class="sym hot">
+            <div class="sym-name"><span class="tag fn">fn</span> process_assistant_message(msg, tracker, transcript) <span class="tag exam">exam</span></div>
+            <div class="sym-desc">まず tracker.set_current_context() に parent_tool_use_id を渡し、content を走査。TextBlock は本文を書き出し、Task / Agent の ToolUseBlock なら register_subagent_spawn() を呼ぶ。SDK 0.2.x で Task → Agent に改名されたため両方を受ける。</div>
+          </div>
+          <div class="sym">
+            <div class="sym-name"><span class="tag state">module</span> _tool_just_used</div>
+            <div class="sym-desc">直前がツールだったかを覚えるだけのグローバルフラグ。次のテキストの前に改行を 1 つ入れるかを決める。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="mod">
+        <div class="mod-head">
+          <div class="mod-path">utils/subagent_tracker.py</div>
+          <div class="mod-role">計測と記録。誰がどのツールを呼び、どう終わったかを保持する。</div>
+        </div>
+        <div class="mod-body">
+          <div class="sym">
+            <div class="sym-name"><span class="tag cls">dataclass</span> ToolCallRecord</div>
+            <div class="sym-desc">ツール 1 回分。pre フックで生成され、post フックで tool_output / error が埋まる。</div>
+          </div>
+          <div class="sym">
+            <div class="sym-name"><span class="tag cls">dataclass</span> SubagentSession</div>
+            <div class="sym-desc">サブエージェント 1 体分。subagent_id（RESEARCHER-1 など）と、その配下の ToolCallRecord のリストを持つ。</div>
+          </div>
+          <div class="sym">
+            <div class="sym-name"><span class="tag cls">class</span> SubagentTracker</div>
+            <div class="sym-desc">sessions / tool_call_records / subagent_counters / _current_parent_id と、tool_calls.jsonl のハンドルを保持。</div>
+          </div>
+          <div class="sym nested">
+            <div class="sym-name">register_subagent_spawn(...)</div>
+            <div class="sym-desc">型ごとの連番から subagent_id を作り、SubagentSession を sessions[tool_use_id] に登録して ID を返す。</div>
+          </div>
+          <div class="sym nested hot">
+            <div class="sym-name">set_current_context(parent_id) <span class="tag exam">exam</span></div>
+            <div class="sym-desc">_current_parent_id を差し替えるだけ。これがフック側の「今どのエージェントか」の唯一の手がかり。</div>
+          </div>
+          <div class="sym nested hot">
+            <div class="sym-name"><span class="tag hook">hook</span> pre_tool_use_hook(...) <span class="tag exam">exam</span></div>
+            <div class="sym-desc">_current_parent_id が sessions にあればサブエージェントの記録を作り、なければ MAIN AGENT として扱う（Task / Agent は spawn 表示と重複するので除外）。最後に {'continue_': True} を返す。</div>
+          </div>
+          <div class="sym nested hot">
+            <div class="sym-name"><span class="tag hook">hook</span> post_tool_use_hook(...) <span class="tag exam">exam</span></div>
+            <div class="sym-desc">tool_use_id で記録を引き当て、tool_response とエラーを書き戻して tool_call_complete を JSONL に落とす。該当レコードがなければ何もせず返す。</div>
+          </div>
+          <div class="sym nested">
+            <div class="sym-name">_log_tool_use / _format_tool_input / _log_to_jsonl</div>
+            <div class="sym-desc">出力の下請け。1 行サマリを transcript へ、入力の要約（query / file / pattern / spawn）をファイルへ、構造化ログを JSONL へ。</div>
+          </div>
+          <div class="sym nested">
+            <div class="sym-name">close()</div>
+            <div class="sym-desc">tool_calls.jsonl を閉じる。</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2><span>05</span> &nbsp;図だけでは読み取りにくい 3 点</h2>
+    <div class="notes">
+
+      <div class="note">
+        <h3>帰属は共有変数ごしに決まる</h3>
+        <p>
+          フックは「どのサブエージェントの呼び出しか」を引数では受け取らない。
+          <code>process_assistant_message()</code> がメッセージごとに <code>set_current_context()</code> で
+          <code>_current_parent_id</code> を書き換え、<code>pre_tool_use_hook()</code> がそれを読む——という
+          可変な共有状態が 2 モジュールをつないでいる。図の <code>procMsg → setCtx</code> と
+          <code>preHook</code> の間に矢印はないが、実質ここが最も強い結合。
+        </p>
+      </div>
+
+      <div class="note">
+        <h3>記録の入口は 2 つある</h3>
+        <p>
+          spawn の検知はメッセージストリーム側（<code>process_assistant_message</code>）、
+          個々のツール呼び出しはフック側（<code>pre</code> / <code>post</code>）。
+          <code>SubagentTracker</code> は両方から書き込まれる合流点で、
+          <code>pre_tool_use_hook</code> がメインエージェントの <code>Task</code> / <code>Agent</code> を
+          スキップしているのは、この二重経路で同じ spawn を 2 回出さないため。
+        </p>
+      </div>
+
+      <div class="note">
+        <h3>出力先は 3 系統に分かれている</h3>
+        <p>
+          コンソール＋transcript（<code>write</code>）、transcript のみ（<code>write_to_file</code>）、
+          機械可読な <code>tool_calls.jsonl</code>（<code>_log_to_jsonl</code>）。
+          <code>_log_tool_use()</code> はこの 3 つのうち上 2 つを使い分ける唯一の場所で、
+          <code>transcript_writer</code> が <code>None</code> のときだけ素の <code>print</code> に落ちる。
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    agentSDK/research-agent &middot; agent.py + utils/{transcript, message_handler, subagent_tracker}.py<br>
+    赤は認定試験で問われやすい SDK の要点（本コードから確認できる範囲）。
+  </footer>
+
+</div>
+
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: dark ? "dark" : "default",
+    securityLevel: "loose",
+    fontFamily: "ui-monospace, Consolas, monospace"
+  });
+</script>
+</body>
+</html>
