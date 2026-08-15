@@ -5,3 +5,14 @@ test/*
 
 Handson/*
 *.zip
+
+.venv/
+
+.env
+
+
+agentSDK/hello-world/*
+agentSDK/research-agent/*
+
+
+ref/*
