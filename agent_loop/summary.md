@@ -33,24 +33,23 @@
     - end_turn : モデルの通常終了
     - max_tokens : 出力トークン制限に達した
     - refusal : モデルがリクエストを拒否した
-
-  ‐ **subtype** (str)
-    - *success* : 通常のタスク完了した場合 -> "result"フィールドに結果がstrで出力される。それ以外はNone。
-    - *error_max_turns* : max_turns/maxTurns制限に達した場合
-    - *error_max_budget_usd* : maxBudgetUsd制限に達した場合
-    - *error_during_execution* : API障害などによりLoopが中断された場合
-    - *error_max_structured_output_retries* : retry回数内で有効な出力が生成されなかった場合など
+  -  **subtype** (str)
+     - *success* : 通常のタスク完了した場合 -> "result"フィールドに結果がstrで出力される。それ以外はNone。
+     - *error_max_turns* : max_turns/maxTurns制限に達した場合
+     - *error_max_budget_usd* : maxBudgetUsd制限に達した場合
+     - *error_during_execution* : API障害などによりLoopが中断された場合
+     - *error_max_structured_output_retries* : retry回数内で有効な出力が生成されなかった場合など
 
   - **is_error** — subtype が "success" でも is_error=True になるケースがあるため、確認するのが安全
   - **terminal_reason** : なぜループが終わったかを示すフィールド。subtype より細かい新しいフィールド。interrupt() による中断を区別できるのが利点。
-    - "completed"
-    - "max_turns"
-    - "aborted_streaming"
-    - "aborted_tools"
+    - *completed*
+    - *max_turns*
+    - *aborted_streaming*
+    - *aborted_tools*
 
 ## note/tips
 
-‐ Claude API の response.stop_reasonには `tool_use`, `end_turn`が存在する。
+- Claude API の response.stop_reasonには `tool_use`, `end_turn`が存在する。
 
 
 ## supplement
