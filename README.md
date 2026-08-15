@@ -10,186 +10,186 @@
 
 ## 学習進捗
 
-### 01 — [Claude 101](reference/01---Claude_101/)
+### 01 — [Claude 101](001-AnthropicAcademy/01---Claude_101/)
 
 
 | # | モジュール | ステータス | 完了日|
 |---|---|---|---|
-| 05 | [Introduction to Projects](reference/01---Claude_101/05_introduction_to_projects/summary.md) | ✅ 完了 | 2026/06/15 |
-| 06 | [Creating with Artifacts](reference/01---Claude_101/06_creating_with_artifacts/summary.md) | ✅ 完了 | 2026/06/16 |
-| 07 | [Working with Skills](reference/01---Claude_101/07_Wroking_with_skills/summary.md) | ✅ 完了 | 2026/06/17 |
-| 08 | [Connecting your tools](reference/01---Claude_101/08_Connecting%20your%20tools/summary.md) | ✅ 完了 | 2026/06/17 |
-| 10 | [Research mode for deep dives](reference/01---Claude_101/10_Research_mode_for_deep_drives/summary.md) | ✅ 完了 | 2026/06/20 |
-| 11 | [Claude in action: use-cases by role](reference/01---Claude_101/11_Claude_in_action__use-cases_by_role/summary.md) | ✅ 完了 | 2026/06/20 |
-| 12 | [Other ways to work with Claude](reference/01---Claude_101/12_Other_ways_to_work_with_Claude/summary.md) | ✅ 完了 | 2026/06/20 |
-| 13 | [What's next?](reference/01---Claude_101/13_Whats_next/summary.md) | ✅ 完了 | 2026/06/20 |
+| 05 | [Introduction to Projects](001-AnthropicAcademy/01---Claude_101/05_introduction_to_projects/summary.md) | ✅ 完了 | 2026/06/15 |
+| 06 | [Creating with Artifacts](001-AnthropicAcademy/01---Claude_101/06_creating_with_artifacts/summary.md) | ✅ 完了 | 2026/06/16 |
+| 07 | [Working with Skills](001-AnthropicAcademy/01---Claude_101/07_Wroking_with_skills/summary.md) | ✅ 完了 | 2026/06/17 |
+| 08 | [Connecting your tools](001-AnthropicAcademy/01---Claude_101/08_Connecting%20your%20tools/summary.md) | ✅ 完了 | 2026/06/17 |
+| 10 | [Research mode for deep dives](001-AnthropicAcademy/01---Claude_101/10_Research_mode_for_deep_drives/summary.md) | ✅ 完了 | 2026/06/20 |
+| 11 | [Claude in action: use-cases by role](001-AnthropicAcademy/01---Claude_101/11_Claude_in_action__use-cases_by_role/summary.md) | ✅ 完了 | 2026/06/20 |
+| 12 | [Other ways to work with Claude](001-AnthropicAcademy/01---Claude_101/12_Other_ways_to_work_with_Claude/summary.md) | ✅ 完了 | 2026/06/20 |
+| 13 | [What's next?](001-AnthropicAcademy/01---Claude_101/13_Whats_next/summary.md) | ✅ 完了 | 2026/06/20 |
 
-### 02 — [Building with the Claude API](reference/02---Building_with_the_Claude_API/)
+### 02 — [Building with the Claude API](001-AnthropicAcademy/02---Building_with_the_Claude_API/)
 
 | # | モジュール | ステータス | 完了日|
 |---|---|---|---|
-| 02 | [Overview of Claude models](reference/02---Building_with_the_Claude_API/02_Overview_of_Claude_models/summary.md) | ✅ 完了 | 2026/08/01 |
-| 03 | [Accessing the API](reference/02---Building_with_the_Claude_API/03_Accessing_the_API/summary.md) | ✅ 完了 | 2026/08/01 |
+| 02 | [Overview of Claude models](001-AnthropicAcademy/02---Building_with_the_Claude_API/02_Overview_of_Claude_models/summary.md) | ✅ 完了 | 2026/08/01 |
+| 03 | [Accessing the API](001-AnthropicAcademy/02---Building_with_the_Claude_API/03_Accessing_the_API/summary.md) | ✅ 完了 | 2026/08/01 |
 | 04 | Getting an API key | ➖ 割愛 | 2026/08/02 |
-| 05 | [Making a request](reference/02---Building_with_the_Claude_API/05_Making_a_request/summary.md) | ✅ 完了 | 2026/08/02 |
-| 06 | [Multi-Turn conversations](reference/02---Building_with_the_Claude_API/06_Multi-Turn_conversations/summary.md) | ✅ 完了 | 2026/08/03 |
+| 05 | [Making a request](001-AnthropicAcademy/02---Building_with_the_Claude_API/05_Making_a_request/summary.md) | ✅ 完了 | 2026/08/02 |
+| 06 | [Multi-Turn conversations](001-AnthropicAcademy/02---Building_with_the_Claude_API/06_Multi-Turn_conversations/summary.md) | ✅ 完了 | 2026/08/03 |
 | 07 | Chat exercise | ➖ 割愛 | 2026/08/03 |
-| 08 | [System prompts](reference/02---Building_with_the_Claude_API/08_System_prompts/summary.md) | ✅ 完了 | 2026/08/03 |
+| 08 | [System prompts](001-AnthropicAcademy/02---Building_with_the_Claude_API/08_System_prompts/summary.md) | ✅ 完了 | 2026/08/03 |
 | 09 | System prompts exercise | ➖ 割愛 | 2026/08/03 |
-| 10 | [Temperature](reference/02---Building_with_the_Claude_API/10_Temperature/summary.md) | ✅ 完了 | 2026/08/03 |
+| 10 | [Temperature](001-AnthropicAcademy/02---Building_with_the_Claude_API/10_Temperature/summary.md) | ✅ 完了 | 2026/08/03 |
 | 11 | Temperature exercise | ➖ 割愛 | 2026/08/03 |
-| 12 | [Response streaming](reference/02---Building_with_the_Claude_API/12_Response_streaming/summary.md) | ✅ 完了 | 2026/08/03 |
-| 13 | [Structured data](reference/02---Building_with_the_Claude_API/13_Structured_data/summary.md) | ✅ 完了 | 2026/08/04 |
+| 12 | [Response streaming](001-AnthropicAcademy/02---Building_with_the_Claude_API/12_Response_streaming/summary.md) | ✅ 完了 | 2026/08/03 |
+| 13 | [Structured data](001-AnthropicAcademy/02---Building_with_the_Claude_API/13_Structured_data/summary.md) | ✅ 完了 | 2026/08/04 |
 | 14 | Structured data exercise | ➖ 割愛 | 2026/08/04 |
 | 15 | Quiz on accessing Claude with the API | ➖ 割愛 | 2026/08/04 |
-| 16 | [Prompt evaluation](reference/02---Building_with_the_Claude_API/16_Prompt_evaluation/summary.md) | ✅ 完了 | 2026/08/10 |
-| 17 | [A typical eval workflow](reference/02---Building_with_the_Claude_API/17_A_typical_eval_workflow/summary.md) | ✅ 完了 | 2026/08/10 |
-| 18 | [Generating test datasets](reference/02---Building_with_the_Claude_API/18_Generating_test_datasets/summary.md) | ✅ 完了 | 2026/08/11 |
-| 19 | [running the eval](reference/02---Building_with_the_Claude_API/19_running_the_eval/summary.md) | ✅ 完了 | 2026/08/11 |
-| 20 | [Model based grading](reference/02---Building_with_the_Claude_API/20_Model_based_grading/summary.md) | ✅ 完了 | 2026/08/11 |
-| 21 | [Code based grading](reference/02---Building_with_the_Claude_API/21_Code_based_grading/summary.md) | ✅ 完了 | 2026/08/11 |
-| 22 | [Exercise on prompts evals](reference/02---Building_with_the_Claude_API/22_Exercise_on_prompts_evals/summary.md) | ➖ 割愛 | 2026/08/11 |
+| 16 | [Prompt evaluation](001-AnthropicAcademy/02---Building_with_the_Claude_API/16_Prompt_evaluation/summary.md) | ✅ 完了 | 2026/08/10 |
+| 17 | [A typical eval workflow](001-AnthropicAcademy/02---Building_with_the_Claude_API/17_A_typical_eval_workflow/summary.md) | ✅ 完了 | 2026/08/10 |
+| 18 | [Generating test datasets](001-AnthropicAcademy/02---Building_with_the_Claude_API/18_Generating_test_datasets/summary.md) | ✅ 完了 | 2026/08/11 |
+| 19 | [running the eval](001-AnthropicAcademy/02---Building_with_the_Claude_API/19_running_the_eval/summary.md) | ✅ 完了 | 2026/08/11 |
+| 20 | [Model based grading](001-AnthropicAcademy/02---Building_with_the_Claude_API/20_Model_based_grading/summary.md) | ✅ 完了 | 2026/08/11 |
+| 21 | [Code based grading](001-AnthropicAcademy/02---Building_with_the_Claude_API/21_Code_based_grading/summary.md) | ✅ 完了 | 2026/08/11 |
+| 22 | [Exercise on prompts evals](001-AnthropicAcademy/02---Building_with_the_Claude_API/22_Exercise_on_prompts_evals/summary.md) | ➖ 割愛 | 2026/08/11 |
 | 23 | Quiz on prompt evaluation | ➖ 割愛 | 2026/08/11 |
-| 24 | [Prompt engineering](reference/02---Building_with_the_Claude_API/24_Prompt_engineering/summary.md) | ✅ 完了 | 2026/08/12 |
-| 25 | [Being Clear and direct](reference/02---Building_with_the_Claude_API/25_Being_Clear_and_direct/summary.md) | ✅ 完了 | 2026/08/12 |
-| 26 | [Being specific](reference/02---Building_with_the_Claude_API/26_Being_specific/summary.md) | ✅ 完了 | 2026/08/12 |
-| 27 | [Structure with XML tags](reference/02---Building_with_the_Claude_API/27_Structure_with_XML_tags/summary.md) | ✅ 完了 | 2026/08/12 |
-| 28 | [Providing examples](reference/02---Building_with_the_Claude_API/28_Providing_examples/summary.md) | ✅ 完了 | 2026/08/12 |
+| 24 | [Prompt engineering](001-AnthropicAcademy/02---Building_with_the_Claude_API/24_Prompt_engineering/summary.md) | ✅ 完了 | 2026/08/12 |
+| 25 | [Being Clear and direct](001-AnthropicAcademy/02---Building_with_the_Claude_API/25_Being_Clear_and_direct/summary.md) | ✅ 完了 | 2026/08/12 |
+| 26 | [Being specific](001-AnthropicAcademy/02---Building_with_the_Claude_API/26_Being_specific/summary.md) | ✅ 完了 | 2026/08/12 |
+| 27 | [Structure with XML tags](001-AnthropicAcademy/02---Building_with_the_Claude_API/27_Structure_with_XML_tags/summary.md) | ✅ 完了 | 2026/08/12 |
+| 28 | [Providing examples](001-AnthropicAcademy/02---Building_with_the_Claude_API/28_Providing_examples/summary.md) | ✅ 完了 | 2026/08/12 |
 | 29 | Exercise on prompt engineering | ➖ 割愛 | 2026/08/12 |
 | 30 | Quiz on prompt engineering | ➖ 割愛 | 2026/08/12 |
-| 31 | [Introduction tool use](reference/02---Building_with_the_Claude_API/31_Introduction_tool_use/summary.md) | ✅ 完了 | 2026/08/04 |
+| 31 | [Introduction tool use](001-AnthropicAcademy/02---Building_with_the_Claude_API/31_Introduction_tool_use/summary.md) | ✅ 完了 | 2026/08/04 |
 | 32 | Project overview | ➖ 割愛 | 2026/08/04 |
-| 33 | [Tool functions](reference/02---Building_with_the_Claude_API/33_Tool_functions/summary.md) | ✅ 完了 | 2026/08/04 |
-| 34 | [Tool schema](reference/02---Building_with_the_Claude_API/34_Tool_schema/summary.md) | ✅ 完了 | 2026/08/04 |
-| 35 | [Handling message blocks](reference/02---Building_with_the_Claude_API/35_Handling_message_blocks/summary.md) | ✅ 完了 | 2026/08/04 |
-| 36 | [Sending tool result](reference/02---Building_with_the_Claude_API/36_Sending_tool_result/summary.md) | ✅ 完了 | 2026/08/04 |
-| 37 | [Mulit-turn conversations with tools](reference/02---Building_with_the_Claude_API/37_Mulit-turn_conversations_with_tools/summary.md) | ✅ 完了 | 2026/08/04 |
-| 38 | [Implementing multiple turns](reference/02---Building_with_the_Claude_API/38_Implementing_multiple_turns/summary.md) | ✅ 完了 | 2026/08/04 |
-| 39 | [Using multiple tools](reference/02---Building_with_the_Claude_API/39_Using_multiple_tools/summary.md) | ✅ 完了 | 2026/08/04 |
-| 40 | [Fine grained tool calling](reference/02---Building_with_the_Claude_API/40_Fine_grained_tool_calling/summary.md) | ✅ 完了 | 2026/08/05 |
-| 41 | [the text edit tool](reference/02---Building_with_the_Claude_API/41_the_text_edit_tool/summary.md) | ✅ 完了 | 2026/08/05 |
-| 42 | [The web search tool](reference/02---Building_with_the_Claude_API/42_The_web_search_tool/summary.md) | ✅ 完了 | 2026/08/06 |
-| 55 | [Prompt caching](reference/02---Building_with_the_Claude_API/55_Prompt_caching/summary.md) | ✅ 完了 | 2026/08/13 |
-| 76 | [Agents and workflows](reference/02---Building_with_the_Claude_API/76_Agents_and_workflows/summary.md) | ✅ 完了 | 2026/08/07 |
-| 77 | [Parallelization workflows](reference/02---Building_with_the_Claude_API/77_Parallelization_workflows/summary.md) | ✅ 完了 | 2026/08/07 |
-| 78 | [Chaining workflows](reference/02---Building_with_the_Claude_API/78_Changing_workflows/summary.md) | ✅ 完了 | 2026/08/07 |
-| 79 | [Routing workflows](reference/02---Building_with_the_Claude_API/79_Routing_workdlows/summary.md) | ✅ 完了 | 2026/08/08 |
-| 80 | [Agents and tools](reference/02---Building_with_the_Claude_API/80_Agents_and_tools/summary.md) | ✅ 完了 | 2026/08/08 |
-| 81 | [Environment inspection](reference/02---Building_with_the_Claude_API/81_Environment_inspection/summary.md) | ✅ 完了 | 2026/08/08 |
-| 82 | [Workflows vs agents](reference/02---Building_with_the_Claude_API/82_Workflows_vs_agents/summary.md) | ✅ 完了 | 2026/08/08 |
+| 33 | [Tool functions](001-AnthropicAcademy/02---Building_with_the_Claude_API/33_Tool_functions/summary.md) | ✅ 完了 | 2026/08/04 |
+| 34 | [Tool schema](001-AnthropicAcademy/02---Building_with_the_Claude_API/34_Tool_schema/summary.md) | ✅ 完了 | 2026/08/04 |
+| 35 | [Handling message blocks](001-AnthropicAcademy/02---Building_with_the_Claude_API/35_Handling_message_blocks/summary.md) | ✅ 完了 | 2026/08/04 |
+| 36 | [Sending tool result](001-AnthropicAcademy/02---Building_with_the_Claude_API/36_Sending_tool_result/summary.md) | ✅ 完了 | 2026/08/04 |
+| 37 | [Mulit-turn conversations with tools](001-AnthropicAcademy/02---Building_with_the_Claude_API/37_Mulit-turn_conversations_with_tools/summary.md) | ✅ 完了 | 2026/08/04 |
+| 38 | [Implementing multiple turns](001-AnthropicAcademy/02---Building_with_the_Claude_API/38_Implementing_multiple_turns/summary.md) | ✅ 完了 | 2026/08/04 |
+| 39 | [Using multiple tools](001-AnthropicAcademy/02---Building_with_the_Claude_API/39_Using_multiple_tools/summary.md) | ✅ 完了 | 2026/08/04 |
+| 40 | [Fine grained tool calling](001-AnthropicAcademy/02---Building_with_the_Claude_API/40_Fine_grained_tool_calling/summary.md) | ✅ 完了 | 2026/08/05 |
+| 41 | [the text edit tool](001-AnthropicAcademy/02---Building_with_the_Claude_API/41_the_text_edit_tool/summary.md) | ✅ 完了 | 2026/08/05 |
+| 42 | [The web search tool](001-AnthropicAcademy/02---Building_with_the_Claude_API/42_The_web_search_tool/summary.md) | ✅ 完了 | 2026/08/06 |
+| 55 | [Prompt caching](001-AnthropicAcademy/02---Building_with_the_Claude_API/55_Prompt_caching/summary.md) | ✅ 完了 | 2026/08/13 |
+| 76 | [Agents and workflows](001-AnthropicAcademy/02---Building_with_the_Claude_API/76_Agents_and_workflows/summary.md) | ✅ 完了 | 2026/08/07 |
+| 77 | [Parallelization workflows](001-AnthropicAcademy/02---Building_with_the_Claude_API/77_Parallelization_workflows/summary.md) | ✅ 完了 | 2026/08/07 |
+| 78 | [Chaining workflows](001-AnthropicAcademy/02---Building_with_the_Claude_API/78_Changing_workflows/summary.md) | ✅ 完了 | 2026/08/07 |
+| 79 | [Routing workflows](001-AnthropicAcademy/02---Building_with_the_Claude_API/79_Routing_workdlows/summary.md) | ✅ 完了 | 2026/08/08 |
+| 80 | [Agents and tools](001-AnthropicAcademy/02---Building_with_the_Claude_API/80_Agents_and_tools/summary.md) | ✅ 完了 | 2026/08/08 |
+| 81 | [Environment inspection](001-AnthropicAcademy/02---Building_with_the_Claude_API/81_Environment_inspection/summary.md) | ✅ 完了 | 2026/08/08 |
+| 82 | [Workflows vs agents](001-AnthropicAcademy/02---Building_with_the_Claude_API/82_Workflows_vs_agents/summary.md) | ✅ 完了 | 2026/08/08 |
 | 83 | Quiz on agents and workflows | ➖ 割愛 | 2026/08/08 |
 
-### 03 — [Introduction_to_MCP](reference/03---Introduction_to_MCP/)
+### 03 — [Introduction_to_MCP](001-AnthropicAcademy/03---Introduction_to_MCP/)
 
 | # | モジュール | ステータス | 完了日|
 |---|---|---|---|
-| 01 | [Welcome to the course](reference/03---Introduction_to_MCP/01_welcome_to_the_course/summary.md) | ✅ 完了 | 2026/07/07 |
-| 02 | [Introduction MCP](reference/03---Introduction_to_MCP/02_Introduction_MCP/summary.md) | ✅ 完了 | 2026/07/09 |
-| 03 | [MCP clients](reference/03---Introduction_to_MCP/03_MCP_clients/summary.md) | ✅ 完了 | 2026/07/12 |
-| 05 | [Defining tools with MCP](reference/03---Introduction_to_MCP/05_Defining_tools_with_MCP/summary.md) | ✅ 完了 | 2026/07/13 |
-| 06 | [The server inspector](reference/03---Introduction_to_MCP/06_The_server_inspector/summary.md) | ✅ 完了 | 2026/07/21 |
+| 01 | [Welcome to the course](001-AnthropicAcademy/03---Introduction_to_MCP/01_welcome_to_the_course/summary.md) | ✅ 完了 | 2026/07/07 |
+| 02 | [Introduction MCP](001-AnthropicAcademy/03---Introduction_to_MCP/02_Introduction_MCP/summary.md) | ✅ 完了 | 2026/07/09 |
+| 03 | [MCP clients](001-AnthropicAcademy/03---Introduction_to_MCP/03_MCP_clients/summary.md) | ✅ 完了 | 2026/07/12 |
+| 05 | [Defining tools with MCP](001-AnthropicAcademy/03---Introduction_to_MCP/05_Defining_tools_with_MCP/summary.md) | ✅ 完了 | 2026/07/13 |
+| 06 | [The server inspector](001-AnthropicAcademy/03---Introduction_to_MCP/06_The_server_inspector/summary.md) | ✅ 完了 | 2026/07/21 |
 | 07 | Survey | ➖ 割愛 | 2026/07/25 |
-| 08 | [Implementing a client](reference/03---Introduction_to_MCP/08_Implementing_a_client/summary.md) | ✅ 完了 | 2026/07/25 |
-| 09 | [Defining resources](reference/03---Introduction_to_MCP/09_Defining_resources/summary.md) | ✅ 完了 | 2026/07/25 |
-| 10 | [Accessing resources](reference/03---Introduction_to_MCP/10_Accessing_resources/summary.md) | ✅ 完了 | 2026/07/25 |
-| 11 | [Defining prompts](reference/03---Introduction_to_MCP/11_/summary.md) | ✅ 完了 | 2026/07/26 |
-| 12 | [Prompts in the client](reference/03---Introduction_to_MCP/12_Prompts_in_the_client/summary.md) | ✅ 完了 | 2026/07/26 |
+| 08 | [Implementing a client](001-AnthropicAcademy/03---Introduction_to_MCP/08_Implementing_a_client/summary.md) | ✅ 完了 | 2026/07/25 |
+| 09 | [Defining resources](001-AnthropicAcademy/03---Introduction_to_MCP/09_Defining_resources/summary.md) | ✅ 完了 | 2026/07/25 |
+| 10 | [Accessing resources](001-AnthropicAcademy/03---Introduction_to_MCP/10_Accessing_resources/summary.md) | ✅ 完了 | 2026/07/25 |
+| 11 | [Defining prompts](001-AnthropicAcademy/03---Introduction_to_MCP/11_/summary.md) | ✅ 完了 | 2026/07/26 |
+| 12 | [Prompts in the client](001-AnthropicAcademy/03---Introduction_to_MCP/12_Prompts_in_the_client/summary.md) | ✅ 完了 | 2026/07/26 |
 | 13 | Test | ➖ 割愛 | 2026/07/26 |
-| 14 | [MCP review](reference/03---Introduction_to_MCP/14_MCP_review/summary.md) | ✅ 完了 | 2026/07/26 |
+| 14 | [MCP review](001-AnthropicAcademy/03---Introduction_to_MCP/14_MCP_review/summary.md) | ✅ 完了 | 2026/07/26 |
 
-### 04 — [MCP_Advanced_Topics](reference/04---MCP_Advanced_Topics/)
+### 04 — [MCP_Advanced_Topics](001-AnthropicAcademy/04---MCP_Advanced_Topics/)
 
 | # | モジュール | ステータス | 完了日|
 |---|---|---|---|
 | 01 | Let's get started | ➖ 割愛 | 2026/07/27 |
-| 02 | [Sampling](reference/04---MCP_Advanced_Topics/02_Sampling/summary.md) | ✅ 完了 | 2026/07/27 |
-| 03 | [Sampling walkthrough](reference/04---MCP_Advanced_Topics/03_Sampling_workthrough/summary.md) | ✅ 完了 | 2026/07/27 |
-| 04 | [Log and progress notifications](reference/04---MCP_Advanced_Topics/04_Log_and_progress_notifications/summary.md) | ✅ 完了 | 2026/07/27 |
-| 05 | [Notifications walkthrough](reference/04---MCP_Advanced_Topics/05_Notifications_walkthrough/summary.md) | ✅ 完了 | 2026/07/27 |
-| 06 | [Roots](reference/04---MCP_Advanced_Topics/06_Roots/summary.md) | ✅ 完了 | 2026/07/28 |
-| 07 | [Roots walkthrough](reference/04---MCP_Advanced_Topics/07_Roots_walkthrough/summary.md) | ✅ 完了 | 2026/07/29 |
+| 02 | [Sampling](001-AnthropicAcademy/04---MCP_Advanced_Topics/02_Sampling/summary.md) | ✅ 完了 | 2026/07/27 |
+| 03 | [Sampling walkthrough](001-AnthropicAcademy/04---MCP_Advanced_Topics/03_Sampling_workthrough/summary.md) | ✅ 完了 | 2026/07/27 |
+| 04 | [Log and progress notifications](001-AnthropicAcademy/04---MCP_Advanced_Topics/04_Log_and_progress_notifications/summary.md) | ✅ 完了 | 2026/07/27 |
+| 05 | [Notifications walkthrough](001-AnthropicAcademy/04---MCP_Advanced_Topics/05_Notifications_walkthrough/summary.md) | ✅ 完了 | 2026/07/27 |
+| 06 | [Roots](001-AnthropicAcademy/04---MCP_Advanced_Topics/06_Roots/summary.md) | ✅ 完了 | 2026/07/28 |
+| 07 | [Roots walkthrough](001-AnthropicAcademy/04---MCP_Advanced_Topics/07_Roots_walkthrough/summary.md) | ✅ 完了 | 2026/07/29 |
 | 08 | Survey | ➖ 割愛 | 2026/07/31 |
-| 09 | [JSON message types](reference/04---MCP_Advanced_Topics/09_JSON_message_types/summary.md) | ✅ 完了 | 2026/07/30 |
-| 10 | [The STDIO transport](reference/04---MCP_Advanced_Topics/10_The_STDIO_transport/summary.md) | ✅ 完了 | 2026/07/31 |
-| 11 | [The StreamableHTTP transport](reference/04---MCP_Advanced_Topics/11_The_StreamableHTTP_transport/summary.md) | ✅ 完了 | 2026/07/31 |
-| 12 | [StreamableHTTP in Depth](reference/04---MCP_Advanced_Topics/12_StreamableHTTP_in_Depth/summary.md) | ✅ 完了 | 2026/08/01 |
-| 13 | [State and the StreamableHTTP transport](reference/04---MCP_Advanced_Topics/13_State_and_the_StreamableHTTP_transport/summary.md) | ✅ 完了 | 2026/08/01 |
+| 09 | [JSON message types](001-AnthropicAcademy/04---MCP_Advanced_Topics/09_JSON_message_types/summary.md) | ✅ 完了 | 2026/07/30 |
+| 10 | [The STDIO transport](001-AnthropicAcademy/04---MCP_Advanced_Topics/10_The_STDIO_transport/summary.md) | ✅ 完了 | 2026/07/31 |
+| 11 | [The StreamableHTTP transport](001-AnthropicAcademy/04---MCP_Advanced_Topics/11_The_StreamableHTTP_transport/summary.md) | ✅ 完了 | 2026/07/31 |
+| 12 | [StreamableHTTP in Depth](001-AnthropicAcademy/04---MCP_Advanced_Topics/12_StreamableHTTP_in_Depth/summary.md) | ✅ 完了 | 2026/08/01 |
+| 13 | [State and the StreamableHTTP transport](001-AnthropicAcademy/04---MCP_Advanced_Topics/13_State_and_the_StreamableHTTP_transport/summary.md) | ✅ 完了 | 2026/08/01 |
 
-### 05 — [Claude_Code_101](reference/05---Claude_Code_101/)
-
-| # | モジュール | ステータス | 完了日|
-|---|---|---|---|
-| 04 | [Your first prompt](reference/05---Claude_Code_101/04_Your_first_prompt/summary.md) | ✅ 完了 | 2026/06/23 |
-| 05 | [The Explore → Plan → Code → Commit workflow](reference/05---Claude_Code_101/05_The_explore-plan-code-commit-workflow/summary.md) | ✅ 完了 | 2026/06/25 |
-| 06 | [Context management](reference/05---Claude_Code_101/06_Context_management/summary.md) | ✅ 完了 | 2026/06/23 |
-| 07 | [Code Review](reference/05---Claude_Code_101/07_Code_Review/summary.md) | ✅ 完了 | 2026/06/23 |
-| 08 | [The CLAUDE.md file](reference/05---Claude_Code_101/08_the_caludemd_file/summary.md) | ✅ 完了 | 2026/06/21 |
-| 09 | [subagents](reference/05---Claude_Code_101/09_subagents/summary.md) | ✅ 完了 | 2026/06/22 |
-| 10 | [skills](reference/05---Claude_Code_101/10_skills/summary.md) | ✅ 完了 | 2026/06/23 |
-| 11 | [MCP](reference/05---Claude_Code_101/11_MCP/summary.md) | ✅ 完了 | 2026/06/22 |
-| 12 | [hooks](reference/05---Claude_Code_101/12_hooks/summary.md) | ✅ 完了 | 2026/06/23 |
-
-### 06 — [Claude_Code_in_Action](reference/06---Claude_Code_in_Action/)
+### 05 — [Claude_Code_101](001-AnthropicAcademy/05---Claude_Code_101/)
 
 | # | モジュール | ステータス | 完了日|
 |---|---|---|---|
-| 01 | [Introduction](reference/06---Claude_Code_in_Action/01_Introduction/summary.md) | ✅ 完了 | 2026/06/25 |
-| 02 | [What is a coding assistant?](reference/06---Claude_Code_in_Action/02_What_is_coding_assistant/summary.md) | ✅ 完了 | 2026/06/25 |
-| 03 | [Claude Code in Action](reference/06---Claude_Code_in_Action/03_Claude_Code_in_action/summary.md) | ✅ 完了 | 2026/06/25 |
-| 04 | [Claude Code setup](reference/06---Claude_Code_in_Action/04_Claude_Code_setup/summary.md) | ➖ 割愛 | 2026/06/25 |
-| 05 | [Project setup](reference/06---Claude_Code_in_Action/05_Project_setup/summary.md) | ➖ 割愛 | 2026/06/26 |
-| 06 | [Adding context](reference/06---Claude_Code_in_Action/06_Adding_context/summary.md) | ✅ 完了 | 2026/06/26 |
-| 07 | [Making changes](reference/06---Claude_Code_in_Action/07_Making_changes/summary.md) | ✅ 完了 | 2026/06/26 |
-| 08 | [Controlling context](reference/06---Claude_Code_in_Action/08_Controlling_context/summary.md) | ✅ 完了 | 2026/06/27 |
-| 09 | [Custom command](reference/06---Claude_Code_in_Action/09_Custom_command/summary.md) | ✅ 完了 | 2026/06/27 |
-| 10 | [MCP servers with Claude Code](reference/06---Claude_Code_in_Action/10_MCP_servers_with_Claude_Code/summary.md) | ✅ 完了 | 2026/06/27 |
-| 11 | [GitHub integration](reference/06---Claude_Code_in_Action/11_GitHub_integration/summary.md) | ✅ 完了 | 2026/06/27 |
-| 12 | [Introducing hooks](reference/06---Claude_Code_in_Action/12_Introducing_hooks/summary.md) | ✅ 完了 | 2026/06/28 |
-| 13 | [Define Hooks](reference/06---Claude_Code_in_Action/13_Defining_hooks/summary.md) | ✅ 完了 | 2026/06/28 |
-| 14 | [Implementing a hook](reference/06---Claude_Code_in_Action/14_Implementing_a_hook/summary.md) | ✅ 完了 | 2026/06/28 |
-| 15 | [Gotchas around hooks](reference/06---Claude_Code_in_Action/15_Gotchas_around_hooks/summary.md) | ✅ 完了 | 2026/06/30 |
-| 16 | [Useful hooks!](reference/06---Claude_Code_in_Action/16_Useful_hooks/summary.md) | ✅ 完了 | 2026/06/30 |
-| 17 | [Another useful hook](reference/06---Claude_Code_in_Action/17_Another_useful_hook/summary.md) | ✅ 完了 | 2026/07/01 |
-| 18 | [The Claude Code SDK](reference/06---Claude_Code_in_Action/18_The_Claude_code_SDK/summary.md) | ✅ 完了 | 2026/07/01 |
+| 04 | [Your first prompt](001-AnthropicAcademy/05---Claude_Code_101/04_Your_first_prompt/summary.md) | ✅ 完了 | 2026/06/23 |
+| 05 | [The Explore → Plan → Code → Commit workflow](001-AnthropicAcademy/05---Claude_Code_101/05_The_explore-plan-code-commit-workflow/summary.md) | ✅ 完了 | 2026/06/25 |
+| 06 | [Context management](001-AnthropicAcademy/05---Claude_Code_101/06_Context_management/summary.md) | ✅ 完了 | 2026/06/23 |
+| 07 | [Code Review](001-AnthropicAcademy/05---Claude_Code_101/07_Code_Review/summary.md) | ✅ 完了 | 2026/06/23 |
+| 08 | [The CLAUDE.md file](001-AnthropicAcademy/05---Claude_Code_101/08_the_caludemd_file/summary.md) | ✅ 完了 | 2026/06/21 |
+| 09 | [subagents](001-AnthropicAcademy/05---Claude_Code_101/09_subagents/summary.md) | ✅ 完了 | 2026/06/22 |
+| 10 | [skills](001-AnthropicAcademy/05---Claude_Code_101/10_skills/summary.md) | ✅ 完了 | 2026/06/23 |
+| 11 | [MCP](001-AnthropicAcademy/05---Claude_Code_101/11_MCP/summary.md) | ✅ 完了 | 2026/06/22 |
+| 12 | [hooks](001-AnthropicAcademy/05---Claude_Code_101/12_hooks/summary.md) | ✅ 完了 | 2026/06/23 |
 
-### 07 — [Introduction to subagents](reference/07---Introduction_to_subagents/)
+### 06 — [Claude_Code_in_Action](001-AnthropicAcademy/06---Claude_Code_in_Action/)
 
 | # | モジュール | ステータス | 完了日|
 |---|---|---|---|
-| 01 | [What are subagents?](reference/07---Introduction_to_subagents/01_Wath_are_subagents/summary.md) | ✅ 完了 | 2026/07/02 |
-| 02 | [Creating a subagent](reference/07---Introduction_to_subagents/02_Creating_a_subagent/summary.md) | ✅ 完了 | 2026/07/03 |
-| 03 | [Designing effective subagents](reference/07---Introduction_to_subagents/03_Designing_effective_subagents/summary.md) | ✅ 完了 | 2026/07/04 |
-| 04 | [Using subagents effectively](reference/07---Introduction_to_subagents/04_Using_subagents_effectively/summary.md) | ✅ 完了 | 2026/07/04 |
+| 01 | [Introduction](001-AnthropicAcademy/06---Claude_Code_in_Action/01_Introduction/summary.md) | ✅ 完了 | 2026/06/25 |
+| 02 | [What is a coding assistant?](001-AnthropicAcademy/06---Claude_Code_in_Action/02_What_is_coding_assistant/summary.md) | ✅ 完了 | 2026/06/25 |
+| 03 | [Claude Code in Action](001-AnthropicAcademy/06---Claude_Code_in_Action/03_Claude_Code_in_action/summary.md) | ✅ 完了 | 2026/06/25 |
+| 04 | [Claude Code setup](001-AnthropicAcademy/06---Claude_Code_in_Action/04_Claude_Code_setup/summary.md) | ➖ 割愛 | 2026/06/25 |
+| 05 | [Project setup](001-AnthropicAcademy/06---Claude_Code_in_Action/05_Project_setup/summary.md) | ➖ 割愛 | 2026/06/26 |
+| 06 | [Adding context](001-AnthropicAcademy/06---Claude_Code_in_Action/06_Adding_context/summary.md) | ✅ 完了 | 2026/06/26 |
+| 07 | [Making changes](001-AnthropicAcademy/06---Claude_Code_in_Action/07_Making_changes/summary.md) | ✅ 完了 | 2026/06/26 |
+| 08 | [Controlling context](001-AnthropicAcademy/06---Claude_Code_in_Action/08_Controlling_context/summary.md) | ✅ 完了 | 2026/06/27 |
+| 09 | [Custom command](001-AnthropicAcademy/06---Claude_Code_in_Action/09_Custom_command/summary.md) | ✅ 完了 | 2026/06/27 |
+| 10 | [MCP servers with Claude Code](001-AnthropicAcademy/06---Claude_Code_in_Action/10_MCP_servers_with_Claude_Code/summary.md) | ✅ 完了 | 2026/06/27 |
+| 11 | [GitHub integration](001-AnthropicAcademy/06---Claude_Code_in_Action/11_GitHub_integration/summary.md) | ✅ 完了 | 2026/06/27 |
+| 12 | [Introducing hooks](001-AnthropicAcademy/06---Claude_Code_in_Action/12_Introducing_hooks/summary.md) | ✅ 完了 | 2026/06/28 |
+| 13 | [Define Hooks](001-AnthropicAcademy/06---Claude_Code_in_Action/13_Defining_hooks/summary.md) | ✅ 完了 | 2026/06/28 |
+| 14 | [Implementing a hook](001-AnthropicAcademy/06---Claude_Code_in_Action/14_Implementing_a_hook/summary.md) | ✅ 完了 | 2026/06/28 |
+| 15 | [Gotchas around hooks](001-AnthropicAcademy/06---Claude_Code_in_Action/15_Gotchas_around_hooks/summary.md) | ✅ 完了 | 2026/06/30 |
+| 16 | [Useful hooks!](001-AnthropicAcademy/06---Claude_Code_in_Action/16_Useful_hooks/summary.md) | ✅ 完了 | 2026/06/30 |
+| 17 | [Another useful hook](001-AnthropicAcademy/06---Claude_Code_in_Action/17_Another_useful_hook/summary.md) | ✅ 完了 | 2026/07/01 |
+| 18 | [The Claude Code SDK](001-AnthropicAcademy/06---Claude_Code_in_Action/18_The_Claude_code_SDK/summary.md) | ✅ 完了 | 2026/07/01 |
 
-### 08 — [Introduction to Agent skills](reference/08---Introduction_to_Agent_skills/)
-
-| # | モジュール | ステータス | 完了日|
-|---|---|---|---|
-| 01 | [What are skills](reference/08---Introduction_to_Agent_skills/01_What_are_skills/summary.md) | ✅ 完了 | 2026/07/05 |
-| 02 | [Creating your first skill](reference/08---Introduction_to_Agent_skills/02_Creating_your_first_skill/summary.md) | ✅ 完了 | 2026/07/05 |
-| 03 | [Configuration and multi-file skills](reference/08---Introduction_to_Agent_skills/03_Configuration_and_multi-file_skills/summary.md) | ✅ 完了 | 2026/07/05 |
-| 04 | [Skills vs other Claude Code feature](reference/08---Introduction_to_Agent_skills/04_Skills_vs_other_Claude_Code_feature/summary.md) | ✅ 完了 | 2026/07/05 |
-| 05 | [Sharing skills](reference/08---Introduction_to_Agent_skills/05_Sharing_skills/summary.md) | ✅ 完了 | 2026/07/06 |
-| 06 | [Troubleshooting skills](reference/08---Introduction_to_Agent_skills/06_Troubleshooting_skills/summary.md) | ✅ 完了 | 2026/07/07 |
-
-
-### extra — [Batch Processing](Batch_processing/)
-
-| # | モジュール | ステータス | 完了日|
-|---|---|---|---|
-| 01 | [Batch processing](Batch_processing/summary.md) | ✅ 完了 | 2026/08/13 |
-
-### extra — [Agent SDK](agentSDK/)
+### 07 — [Introduction to subagents](001-AnthropicAcademy/07---Introduction_to_subagents/)
 
 | # | モジュール | ステータス | 完了日|
 |---|---|---|---|
-| 01 | [Agent SDK](agentSDK/summary.md) | ✅ 完了 | 2026/08/15 |
-| 02 | [research_agent 配線図](agentSDK/research_agent_summary.html) | ✅ 完了 | 2026/08/15 |
+| 01 | [What are subagents?](001-AnthropicAcademy/07---Introduction_to_subagents/01_Wath_are_subagents/summary.md) | ✅ 完了 | 2026/07/02 |
+| 02 | [Creating a subagent](001-AnthropicAcademy/07---Introduction_to_subagents/02_Creating_a_subagent/summary.md) | ✅ 完了 | 2026/07/03 |
+| 03 | [Designing effective subagents](001-AnthropicAcademy/07---Introduction_to_subagents/03_Designing_effective_subagents/summary.md) | ✅ 完了 | 2026/07/04 |
+| 04 | [Using subagents effectively](001-AnthropicAcademy/07---Introduction_to_subagents/04_Using_subagents_effectively/summary.md) | ✅ 完了 | 2026/07/04 |
+
+### 08 — [Introduction to Agent skills](001-AnthropicAcademy/08---Introduction_to_Agent_skills/)
+
+| # | モジュール | ステータス | 完了日|
+|---|---|---|---|
+| 01 | [What are skills](001-AnthropicAcademy/08---Introduction_to_Agent_skills/01_What_are_skills/summary.md) | ✅ 完了 | 2026/07/05 |
+| 02 | [Creating your first skill](001-AnthropicAcademy/08---Introduction_to_Agent_skills/02_Creating_your_first_skill/summary.md) | ✅ 完了 | 2026/07/05 |
+| 03 | [Configuration and multi-file skills](001-AnthropicAcademy/08---Introduction_to_Agent_skills/03_Configuration_and_multi-file_skills/summary.md) | ✅ 完了 | 2026/07/05 |
+| 04 | [Skills vs other Claude Code feature](001-AnthropicAcademy/08---Introduction_to_Agent_skills/04_Skills_vs_other_Claude_Code_feature/summary.md) | ✅ 完了 | 2026/07/05 |
+| 05 | [Sharing skills](001-AnthropicAcademy/08---Introduction_to_Agent_skills/05_Sharing_skills/summary.md) | ✅ 完了 | 2026/07/06 |
+| 06 | [Troubleshooting skills](001-AnthropicAcademy/08---Introduction_to_Agent_skills/06_Troubleshooting_skills/summary.md) | ✅ 完了 | 2026/07/07 |
+
+
+### extra — [Batch Processing](004-Batch_processing/)
+
+| # | モジュール | ステータス | 完了日|
+|---|---|---|---|
+| 01 | [Batch processing](004-Batch_processing/summary.md) | ✅ 完了 | 2026/08/13 |
+
+### extra — [Agent SDK](002-AgentSDK/)
+
+| # | モジュール | ステータス | 完了日|
+|---|---|---|---|
+| 01 | [Agent SDK](002-AgentSDK/summary.md) | ✅ 完了 | 2026/08/15 |
+| 02 | [research_agent 配線図](002-AgentSDK/research_agent_summary.html) | ✅ 完了 | 2026/08/15 |
 
 ## ディレクトリ構成
 
 ```
-reference/
+001-AnthropicAcademy/
 └── 01---Cluade_101/                   # コース
     ├── 05_introduction_to_projects/   # 子カテゴリ
     │   ├── origin.md                  # 原文メモ

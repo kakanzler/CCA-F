@@ -3,7 +3,7 @@
 test.*
 test/*
 
-Handson/*
+801-Handson/*
 *.zip
 
 .venv/
@@ -11,8 +11,8 @@ Handson/*
 .env
 
 
-agentSDK/hello-world/*
-agentSDK/research-agent/*
+002-AgentSDK/hello-world/*
+002-AgentSDK/research-agent/*
 
 
-ref/*
+999-Ref/*
