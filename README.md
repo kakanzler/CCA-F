@@ -179,6 +179,13 @@
 |---|---|---|---|
 | 01 | [Batch processing](Batch_processing/summary.md) | ✅ 完了 | 2026/08/13 |
 
+### extra — [Agent SDK](agentSDK/)
+
+| # | モジュール | ステータス | 完了日|
+|---|---|---|---|
+| 01 | [Agent SDK](agentSDK/summary.md) | ✅ 完了 | 2026/08/15 |
+| 02 | [research_agent 配線図](agentSDK/research_agent_summary.html) | ✅ 完了 | 2026/08/15 |
+
 ## ディレクトリ構成
 
 ```
