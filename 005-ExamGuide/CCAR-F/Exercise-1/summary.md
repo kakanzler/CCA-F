@@ -1,0 +1,5 @@
+# Exercise1
+
+## summary
+
+TOOLの選択はDescription記載内容によって左右され、VagueなDescriptionでは呼び出されないこともあった(確率的)。また、Errorが出た際に、Retriableなどと伝えてもRetlyすることを保証しない。サービスの提供という視点では、エラー時にはApp側で「retryableなものは自動リトライで吸収し、それでも解決しないものやvalidation/permissionは人間対応へ回す」というエラー種別に応じた分岐が品質向上に役立つ。
