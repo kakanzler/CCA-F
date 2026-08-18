@@ -16,3 +16,5 @@ test/*
 
 
 999-Ref/*
+__pycache__/
+.pytest_cache/
