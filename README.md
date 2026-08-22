@@ -186,6 +186,13 @@
 | 01 | [Agent SDK](002-AgentSDK/summary.md) | ✅ 完了 | 2026/08/15 |
 | 02 | [research_agent 配線図](002-AgentSDK/research_agent_summary.html) | ✅ 完了 | 2026/08/15 |
 
+### extra — [模擬試験](100-Exam/)
+
+| # | モジュール | ステータス | 完了日|
+|---|---|---|---|
+| 01 | [CCAR-F Purcell prep v1](100-Exam/01-CCAR-F-Purcell-v1/review.md) | ✅ 完了 | 2026/08/21 |
+| 02 | [CCAR-F Purcell prep v2](100-Exam/02-CCAR-F-Purcell-v2/review.md) | ✅ 完了 | 2026/08/22 |
+
 ## ディレクトリ構成
 
 ```
