@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exam Answer Sheet</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f6f7f9;
+    --panel: #ffffff;
+    --panel-2: #fbfbfc;
+    --ink: #16181d;
+    --ink-dim: #666c78;
+    --ink-faint: #9aa1ad;
+    --line: #e2e5ea;
+    --line-strong: #cfd4dc;
+    --accent: #2f6df6;
+    --accent-soft: #e8effe;
+    --high: #1a8f5a;
+    --high-soft: #e3f5ec;
+    --low: #c2761a;
+    --low-soft: #fdf1e0;
+    --danger: #c0392b;
+    --radius: 10px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --panel: #1c1f25;
+      --panel-2: #22262d;
+      --ink: #e8eaee;
+      --ink-dim: #a4abb7;
+      --ink-faint: #767d89;
+      --line: #2c313a;
+      --line-strong: #3a4049;
+      --accent: #6d9bff;
+      --accent-soft: #23304d;
+      --high: #4fce93;
+      --high-soft: #1c3b2d;
+      --low: #e3a558;
+      --low-soft: #3b2e1a;
+      --danger: #ef6a5a;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "Yu Gothic UI",
+          "Hiragino Kaku Gothic ProN", Meiryo, system-ui, sans-serif;
+    padding-bottom: 4rem;
+  }
+
+  /* ---------- toolbar ---------- */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--panel);
+    border-bottom: 1px solid var(--line);
+    padding: .7rem 1rem .55rem;
+  }
+  .bar {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .6rem 1rem;
+  }
+  #title {
+    flex: 1 1 18rem;
+    min-width: 12rem;
+    font-size: 1.15rem;
+    font-weight: 650;
+    color: var(--ink);
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: .3rem .5rem;
+  }
+  #title:hover { border-color: var(--line); }
+  #title:focus { outline: none; border-color: var(--accent); background: var(--panel-2); }
+
+  .progress {
+    font-variant-numeric: tabular-nums;
+    color: var(--ink-dim);
+    white-space: nowrap;
+  }
+  .progress b { color: var(--ink); font-weight: 650; }
+
+  .btns { display: flex; gap: .4rem; flex-wrap: wrap; }
+  button {
+    font: inherit;
+    color: var(--ink);
+    background: var(--panel-2);
+    border: 1px solid var(--line-strong);
+    border-radius: 8px;
+    padding: .35rem .7rem;
+    cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); color: var(--accent); }
+  button.danger:hover { border-color: var(--danger); color: var(--danger); }
+
+  nav.jump {
+    max-width: 1180px;
+    margin: .45rem auto 0;
+    display: flex;
+    gap: .35rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  nav.jump span { color: var(--ink-faint); font-size: .8rem; margin-right: .15rem; }
+  nav.jump a {
+    text-decoration: none;
+    color: var(--ink-dim);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: .1rem .6rem;
+    font-size: .82rem;
+  }
+  nav.jump a:hover { color: var(--accent); border-color: var(--accent); }
+
+  #status {
+    max-width: 1180px;
+    margin: .5rem auto 0;
+    font-size: .82rem;
+    color: var(--ink-faint);
+    min-height: 1.2em;
+  }
+  #status.warn { color: var(--danger); }
+
+  /* ---------- sheet ---------- */
+  main { max-width: 1180px; margin: 0 auto; padding: 1.2rem 1rem 0; }
+
+  section { margin-bottom: 2rem; scroll-margin-top: 6.5rem; }
+  h2 {
+    font-size: .95rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    margin: 0 0 .7rem;
+    padding-bottom: .35rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: .8rem;
+  }
+
+  .q {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: .6rem .7rem .7rem;
+  }
+  .q.answered { border-color: var(--line-strong); }
+  .q-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: .5rem;
+    margin-bottom: .4rem;
+  }
+  .q-no { font-weight: 700; font-variant-numeric: tabular-nums; }
+  .q-count { font-size: .78rem; color: var(--ink-faint); font-variant-numeric: tabular-nums; }
+
+  .choice {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .18rem .25rem;
+    border-radius: 7px;
+  }
+  .choice:hover { background: var(--panel-2); }
+  .choice > label {
+    display: flex;
+    align-items: center;
+    gap: .45rem;
+    flex: 1;
+    cursor: pointer;
+    user-select: none;
+  }
+  .choice input[type=checkbox] {
+    width: 1.05rem; height: 1.05rem;
+    accent-color: var(--accent);
+    margin: 0;
+    cursor: pointer;
+  }
+  .choice .letter {
+    font-weight: 650;
+    width: 1.1em;
+    color: var(--ink-dim);
+  }
+  .choice input:checked + .letter { color: var(--accent); }
+
+  .conf { display: flex; gap: 2px; }
+  .conf button {
+    font-size: .72rem;
+    line-height: 1.2;
+    padding: .15rem .45rem;
+    border-radius: 6px;
+    color: var(--ink-faint);
+    background: transparent;
+    border: 1px solid var(--line);
+  }
+  .conf button:hover { color: var(--ink); border-color: var(--line-strong); }
+  .conf[data-conf="high"] button[data-level="high"] {
+    color: var(--high); background: var(--high-soft); border-color: var(--high); font-weight: 650;
+  }
+  .conf[data-conf="low"] button[data-level="low"] {
+    color: var(--low); background: var(--low-soft); border-color: var(--low); font-weight: 650;
+  }
+
+  textarea {
+    width: 100%;
+    margin-top: .45rem;
+    font: inherit;
+    font-size: .86rem;
+    color: var(--ink);
+    background: var(--panel-2);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: .4rem .5rem;
+    resize: vertical;
+  }
+  textarea:focus { outline: none; border-color: var(--accent); }
+  textarea::placeholder { color: var(--ink-faint); }
+
+  footer {
+    max-width: 1180px;
+    margin: 1rem auto 0;
+    padding: 0 1rem;
+    font-size: .75rem;
+    color: var(--ink-faint);
+    word-break: break-all;
+  }
+
+  @media print {
+    header, nav.jump, .btns, footer { display: none !important; }
+    body { background: #fff; }
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    .q { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <input id="title" type="text" placeholder="Untitled exam" aria-label="Sheet title">
+    <div class="progress">Answered <b id="answered">0</b> / <span id="total">60</span></div>
+    <div class="btns">
+      <button type="button" id="export">Export JSON</button>
+      <button type="button" id="import">Import JSON</button>
+      <button type="button" id="clear" class="danger">Clear all</button>
+    </div>
+  </div>
+  <nav class="jump" id="jump"><span>Jump</span></nav>
+  <div id="status" role="status"></div>
+</header>
+
+<main id="sheet"></main>
+
+<footer>
+  Autosaved in this browser. Sheet ID: <code id="sheetid"></code>
+</footer>
+
+<input type="file" id="file" accept="application/json,.json" hidden>
+
+<script>
+(function () {
+  'use strict';
+
+  var SECTIONS = 6;
+  var PER_SECTION = 10;
+  var CHOICES = ['A', 'B', 'C', 'D', 'E'];
+  var VERSION = 1;
+  var TOTAL = SECTIONS * PER_SECTION;
+
+  var sheetId = 'cca-answer-sheet::' + decodeURIComponent(location.pathname);
+  var storageOK = true;
+
+  var sheet = document.getElementById('sheet');
+  var titleEl = document.getElementById('title');
+  var answeredEl = document.getElementById('answered');
+  var statusEl = document.getElementById('status');
+  var fileEl = document.getElementById('file');
+
+  document.getElementById('total').textContent = String(TOTAL);
+  document.getElementById('sheetid').textContent = sheetId;
+
+  /* ---------- build ---------- */
+
+  function buildQuestion(sec, num) {
+    var id = sec + '-' + num;
+    var q = document.createElement('div');
+    q.className = 'q';
+    q.dataset.q = id;
+
+    var head = document.createElement('div');
+    head.className = 'q-head';
+    var no = document.createElement('span');
+    no.className = 'q-no';
+    no.textContent = id;
+    var count = document.createElement('span');
+    count.className = 'q-count';
+    head.appendChild(no);
+    head.appendChild(count);
+    q.appendChild(head);
+
+    CHOICES.forEach(function (letter) {
+      var row = document.createElement('div');
+      row.className = 'choice';
+
+      var label = document.createElement('label');
+      var cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.dataset.choice = letter;
+      cb.setAttribute('aria-label', id + ' choice ' + letter);
+      var span = document.createElement('span');
+      span.className = 'letter';
+      span.textContent = letter;
+      label.appendChild(cb);
+      label.appendChild(span);
+
+      var conf = document.createElement('div');
+      conf.className = 'conf';
+      conf.dataset.conf = '';
+      conf.setAttribute('role', 'group');
+      conf.setAttribute('aria-label', id + ' ' + letter + ' confidence');
+      ['high', 'low'].forEach(function (level) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.dataset.level = level;
+        b.textContent = level === 'high' ? 'High' : 'Low';
+        b.setAttribute('aria-pressed', 'false');
+        conf.appendChild(b);
+      });
+
+      row.appendChild(label);
+      row.appendChild(conf);
+      q.appendChild(row);
+    });
+
+    var memo = document.createElement('textarea');
+    memo.rows = 3;
+    memo.placeholder = '復習メモ';
+    memo.setAttribute('aria-label', id + ' review note');
+    q.appendChild(memo);
+
+    return q;
+  }
+
+  var jump = document.getElementById('jump');
+  for (var s = 1; s <= SECTIONS; s++) {
+    var section = document.createElement('section');
+    section.id = 'section-' + s;
+    var h2 = document.createElement('h2');
+    h2.textContent = 'Section ' + s;
+    section.appendChild(h2);
+    var grid = document.createElement('div');
+    grid.className = 'grid';
+    for (var n = 1; n <= PER_SECTION; n++) grid.appendChild(buildQuestion(s, n));
+    section.appendChild(grid);
+    sheet.appendChild(section);
+
+    var a = document.createElement('a');
+    a.href = '#section-' + s;
+    a.textContent = String(s);
+    jump.appendChild(a);
+  }
+
+  var questions = Array.prototype.slice.call(sheet.querySelectorAll('.q'));
+
+  /* ---------- state ---------- */
+
+  function collect() {
+    var answers = {};
+    questions.forEach(function (q) {
+      var entry = {};
+      var any = false;
+      q.querySelectorAll('.choice').forEach(function (row) {
+        var cb = row.querySelector('input[type=checkbox]');
+        var conf = row.querySelector('.conf').dataset.conf || null;
+        if (cb.checked || conf) {
+          entry[cb.dataset.choice] = { checked: cb.checked, conf: conf };
+          any = true;
+        }
+      });
+      var memo = q.querySelector('textarea').value;
+      if (memo) { entry.memo = memo; any = true; }
+      if (any) answers[q.dataset.q] = entry;
+    });
+    return {
+      version: VERSION,
+      title: titleEl.value,
+      updatedAt: new Date().toISOString(),
+      answers: answers
+    };
+  }
+
+  function apply(data) {
+    titleEl.value = (data && typeof data.title === 'string') ? data.title : '';
+    var answers = (data && data.answers && typeof data.answers === 'object') ? data.answers : {};
+    questions.forEach(function (q) {
+      var entry = answers[q.dataset.q] || {};
+      q.querySelectorAll('.choice').forEach(function (row) {
+        var cb = row.querySelector('input[type=checkbox]');
+        var confEl = row.querySelector('.conf');
+        var c = entry[cb.dataset.choice] || {};
+        cb.checked = !!c.checked;
+        setConf(confEl, (c.conf === 'high' || c.conf === 'low') ? c.conf : '');
+      });
+      q.querySelector('textarea').value = (typeof entry.memo === 'string') ? entry.memo : '';
+    });
+    refresh();
+  }
+
+  function setConf(confEl, level) {
+    confEl.dataset.conf = level;
+    confEl.querySelectorAll('button').forEach(function (b) {
+      b.setAttribute('aria-pressed', b.dataset.level === level ? 'true' : 'false');
+    });
+  }
+
+  function refresh() {
+    var answered = 0;
+    questions.forEach(function (q) {
+      var n = q.querySelectorAll('input[type=checkbox]:checked').length;
+      q.querySelector('.q-count').textContent = n ? n + ' / ' + CHOICES.length : '';
+      q.classList.toggle('answered', n > 0);
+      if (n > 0) answered++;
+    });
+    answeredEl.textContent = String(answered);
+  }
+
+  /* ---------- persistence ---------- */
+
+  function say(msg, warn) {
+    statusEl.textContent = msg || '';
+    statusEl.classList.toggle('warn', !!warn);
+  }
+
+  var timer = null;
+  function save() {
+    if (!storageOK) return;
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      try {
+        localStorage.setItem(sheetId, JSON.stringify(collect()));
+        say('Saved ' + new Date().toLocaleTimeString());
+      } catch (e) {
+        storageOK = false;
+        say('自動保存に失敗しました（' + e.name + '）。Export JSON で手元に保存してください。', true);
+      }
+    }, 300);
+  }
+
+  function load() {
+    var raw;
+    try {
+      raw = localStorage.getItem(sheetId);
+      localStorage.setItem(sheetId + '::probe', '1');
+      localStorage.removeItem(sheetId + '::probe');
+    } catch (e) {
+      storageOK = false;
+      say('このブラウザではローカル保存が使えません。Export / Import JSON で保存してください。', true);
+      refresh();
+      return;
+    }
+    if (!raw) { refresh(); return; }
+    var data = null;
+    try { data = JSON.parse(raw); } catch (e) { data = null; }
+    if (!data || typeof data !== 'object' || data.version !== VERSION) {
+      say('保存データを読み込めませんでした。空のシートで開始します（既存データは消していません）。', true);
+      refresh();
+      return;
+    }
+    apply(data);
+    say('Restored ' + (data.updatedAt ? new Date(data.updatedAt).toLocaleString() : ''));
+  }
+
+  /* ---------- events ---------- */
+
+  sheet.addEventListener('click', function (e) {
+    var btn = e.target.closest('.conf button');
+    if (!btn) return;
+    var confEl = btn.parentElement;
+    setConf(confEl, confEl.dataset.conf === btn.dataset.level ? '' : btn.dataset.level);
+    save();
+  });
+
+  sheet.addEventListener('change', function (e) {
+    if (e.target.matches('input[type=checkbox]')) { refresh(); save(); }
+  });
+
+  sheet.addEventListener('input', function (e) {
+    if (e.target.matches('textarea')) save();
+  });
+
+  titleEl.addEventListener('input', function () {
+    document.title = titleEl.value || 'Exam Answer Sheet';
+    save();
+  });
+
+  function slug(s) {
+    return (s || 'answer-sheet').trim().toLowerCase()
+      .replace(/[^a-z0-9぀-ヿ一-龯]+/g, '-')
+      .replace(/^-+|-+$/g, '') || 'answer-sheet';
+  }
+
+  document.getElementById('export').addEventListener('click', function () {
+    var d = new Date();
+    var stamp = d.getFullYear() +
+      String(d.getMonth() + 1).padStart(2, '0') +
+      String(d.getDate()).padStart(2, '0');
+    var blob = new Blob([JSON.stringify(collect(), null, 2)], { type: 'application/json' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = slug(titleEl.value) + '-' + stamp + '.json';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+    say('Exported ' + a.download);
+  });
+
+  document.getElementById('import').addEventListener('click', function () {
+    fileEl.value = '';
+    fileEl.click();
+  });
+
+  fileEl.addEventListener('change', function () {
+    var f = fileEl.files && fileEl.files[0];
+    if (!f) return;
+    var reader = new FileReader();
+    reader.onload = function () {
+      var data = null;
+      try { data = JSON.parse(String(reader.result)); } catch (e) { data = null; }
+      if (!data || typeof data !== 'object' || !data.answers || typeof data.answers !== 'object') {
+        say('この JSON はこのシートの形式ではありません。読み込みを中止しました。', true);
+        return;
+      }
+      if (data.version !== VERSION) {
+        say('バージョンが違う JSON です（' + data.version + '）。読み込みを中止しました。', true);
+        return;
+      }
+      if (!confirm('現在の入力をすべて上書きします。よろしいですか？')) { say('Import cancelled.'); return; }
+      apply(data);
+      save();
+      say('Imported ' + f.name);
+    };
+    reader.onerror = function () { say('ファイルを読み込めませんでした。', true); };
+    reader.readAsText(f);
+  });
+
+  document.getElementById('clear').addEventListener('click', function () {
+    if (!confirm('この答案用紙の入力をすべて消去します。よろしいですか？')) return;
+    apply({ version: VERSION, title: titleEl.value, answers: {} });
+    save();
+    say('Cleared.');
+  });
+
+  window.addEventListener('beforeunload', function () {
+    if (timer) { clearTimeout(timer); timer = null;
+      try { localStorage.setItem(sheetId, JSON.stringify(collect())); } catch (e) {} }
+  });
+
+  load();
+  document.title = titleEl.value || 'Exam Answer Sheet';
+})();
+</script>
+</body>
+</html>

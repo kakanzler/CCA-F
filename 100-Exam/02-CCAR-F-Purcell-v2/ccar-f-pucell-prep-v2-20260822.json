@@ -1,0 +1,625 @@
+{
+  "version": 1,
+  "title": "CCAR-F pucell prep v2",
+  "updatedAt": "2026-08-22T05:12:02.258Z",
+  "answers": {
+    "1-1": {
+      "B": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "1-2": {
+      "D": {
+        "checked": true,
+        "conf": "low"
+      }
+    },
+    "1-3": {
+      "A": {
+        "checked": true,
+        "conf": "high"
+      },
+      "B": {
+        "checked": false,
+        "conf": "high"
+      },
+      "C": {
+        "checked": false,
+        "conf": "high"
+      },
+      "D": {
+        "checked": false,
+        "conf": "high"
+      }
+    },
+    "1-4": {
+      "C": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "1-5": {
+      "B": {
+        "checked": true,
+        "conf": "high"
+      },
+      "memo": "human agent?"
+    },
+    "1-6": {
+      "A": {
+        "checked": false,
+        "conf": "high"
+      },
+      "B": {
+        "checked": false,
+        "conf": "high"
+      },
+      "C": {
+        "checked": false,
+        "conf": "low"
+      },
+      "D": {
+        "checked": true,
+        "conf": "low"
+      },
+      "memo": "outage?"
+    },
+    "1-7": {
+      "A": {
+        "checked": true,
+        "conf": "high"
+      },
+      "B": {
+        "checked": false,
+        "conf": "high"
+      }
+    },
+    "1-8": {
+      "A": {
+        "checked": false,
+        "conf": "high"
+      },
+      "B": {
+        "checked": true,
+        "conf": "high"
+      },
+      "C": {
+        "checked": false,
+        "conf": "high"
+      },
+      "D": {
+        "checked": true,
+        "conf": "high"
+      },
+      "E": {
+        "checked": false,
+        "conf": "high"
+      },
+      "memo": "misroute?"
+    },
+    "1-9": {
+      "C": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "1-10": {
+      "A": {
+        "checked": true,
+        "conf": "high"
+      },
+      "B": {
+        "checked": false,
+        "conf": "high"
+      },
+      "C": {
+        "checked": false,
+        "conf": "high"
+      },
+      "D": {
+        "checked": true,
+        "conf": "high"
+      },
+      "E": {
+        "checked": false,
+        "conf": "high"
+      }
+    },
+    "2-1": {
+      "C": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "2-2": {
+      "B": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "2-3": {
+      "A": {
+        "checked": false,
+        "conf": "high"
+      },
+      "B": {
+        "checked": false,
+        "conf": "low"
+      },
+      "C": {
+        "checked": false,
+        "conf": "high"
+      },
+      "D": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "2-4": {
+      "C": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "2-5": {
+      "C": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "2-6": {
+      "B": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "2-7": {
+      "D": {
+        "checked": true,
+        "conf": "high"
+      },
+      "memo": "contaminating\n問題文が難しかったが、FORKという単語を見て、内容を理解した"
+    },
+    "2-8": {
+      "A": {
+        "checked": false,
+        "conf": "low"
+      },
+      "B": {
+        "checked": false,
+        "conf": "high"
+      },
+      "C": {
+        "checked": false,
+        "conf": "high"
+      },
+      "D": {
+        "checked": true,
+        "conf": "low"
+      }
+    },
+    "2-9": {
+      "A": {
+        "checked": false,
+        "conf": "high"
+      },
+      "B": {
+        "checked": false,
+        "conf": "high"
+      },
+      "C": {
+        "checked": true,
+        "conf": "high"
+      },
+      "D": {
+        "checked": false,
+        "conf": "high"
+      },
+      "memo": "REWIND??"
+    },
+    "2-10": {
+      "A": {
+        "checked": false,
+        "conf": "high"
+      },
+      "B": {
+        "checked": true,
+        "conf": "high"
+      },
+      "C": {
+        "checked": false,
+        "conf": "high"
+      },
+      "D": {
+        "checked": false,
+        "conf": "high"
+      },
+      "E": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "3-1": {
+      "D": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "3-2": {
+      "A": {
+        "checked": false,
+        "conf": "high"
+      },
+      "B": {
+        "checked": true,
+        "conf": "low"
+      },
+      "C": {
+        "checked": false,
+        "conf": "high"
+      },
+      "D": {
+        "checked": false,
+        "conf": "low"
+      }
+    },
+    "3-3": {
+      "A": {
+        "checked": false,
+        "conf": "low"
+      },
+      "B": {
+        "checked": true,
+        "conf": "low"
+      },
+      "C": {
+        "checked": false,
+        "conf": "high"
+      },
+      "D": {
+        "checked": false,
+        "conf": "high"
+      },
+      "memo": "Aの文の意味が解らん。"
+    },
+    "3-4": {
+      "C": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "3-5": {
+      "B": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "3-6": {
+      "B": {
+        "checked": true,
+        "conf": "high"
+      },
+      "C": {
+        "checked": false,
+        "conf": "high"
+      }
+    },
+    "3-7": {
+      "D": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "3-8": {
+      "C": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "3-9": {
+      "A": {
+        "checked": true,
+        "conf": "high"
+      },
+      "B": {
+        "checked": false,
+        "conf": "high"
+      },
+      "C": {
+        "checked": false,
+        "conf": "high"
+      },
+      "D": {
+        "checked": true,
+        "conf": "high"
+      },
+      "E": {
+        "checked": false,
+        "conf": "high"
+      },
+      "memo": "消去法"
+    },
+    "3-10": {
+      "A": {
+        "checked": false,
+        "conf": "high"
+      },
+      "B": {
+        "checked": false,
+        "conf": "low"
+      },
+      "C": {
+        "checked": false,
+        "conf": "high"
+      },
+      "D": {
+        "checked": true,
+        "conf": "low"
+      },
+      "E": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "4-1": {
+      "A": {
+        "checked": true,
+        "conf": "high"
+      },
+      "C": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "4-2": {
+      "A": {
+        "checked": false,
+        "conf": "high"
+      },
+      "B": {
+        "checked": false,
+        "conf": "high"
+      },
+      "C": {
+        "checked": false,
+        "conf": "high"
+      },
+      "D": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "4-3": {
+      "A": {
+        "checked": false,
+        "conf": "high"
+      },
+      "B": {
+        "checked": false,
+        "conf": "low"
+      },
+      "C": {
+        "checked": true,
+        "conf": "low"
+      },
+      "D": {
+        "checked": false,
+        "conf": "high"
+      }
+    },
+    "4-4": {
+      "A": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "4-5": {
+      "C": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "4-6": {
+      "A": {
+        "checked": false,
+        "conf": "high"
+      },
+      "B": {
+        "checked": false,
+        "conf": "low"
+      },
+      "C": {
+        "checked": true,
+        "conf": "low"
+      },
+      "D": {
+        "checked": false,
+        "conf": "high"
+      }
+    },
+    "4-7": {
+      "B": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "4-8": {
+      "A": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "4-9": {
+      "D": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "4-10": {
+      "B": {
+        "checked": true,
+        "conf": "high"
+      },
+      "C": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "5-1": {
+      "B": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "5-2": {
+      "D": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "5-3": {
+      "A": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "5-4": {
+      "C": {
+        "checked": true,
+        "conf": "high"
+      },
+      "memo": "conspicuously 問題文の読解に時間を要した"
+    },
+    "5-5": {
+      "A": {
+        "checked": false,
+        "conf": "high"
+      },
+      "B": {
+        "checked": false,
+        "conf": "high"
+      },
+      "C": {
+        "checked": false,
+        "conf": "low"
+      },
+      "D": {
+        "checked": true,
+        "conf": "low"
+      }
+    },
+    "5-6": {
+      "B": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "5-7": {
+      "A": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "5-8": {
+      "C": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "5-9": {
+      "A": {
+        "checked": true,
+        "conf": "high"
+      },
+      "D": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "5-10": {
+      "B": {
+        "checked": true,
+        "conf": "high"
+      },
+      "E": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "6-1": {
+      "C": {
+        "checked": true,
+        "conf": "high"
+      },
+      "memo": "downstream discrepancy"
+    },
+    "6-2": {
+      "A": {
+        "checked": true,
+        "conf": "high"
+      },
+      "memo": "tool_choice ってなんだっけ？選択肢見て思い出した"
+    },
+    "6-3": {
+      "D": {
+        "checked": true,
+        "conf": "high"
+      },
+      "memo": "checksum"
+    },
+    "6-4": {
+      "B": {
+        "checked": true,
+        "conf": "high"
+      },
+      "memo": "syntactically advertised; land in"
+    },
+    "6-5": {
+      "C": {
+        "checked": true,
+        "conf": "low"
+      },
+      "memo": "じかんつかった"
+    },
+    "6-6": {
+      "A": {
+        "checked": true,
+        "conf": null
+      }
+    },
+    "6-7": {
+      "D": {
+        "checked": true,
+        "conf": "high"
+      }
+    },
+    "6-8": {
+      "B": {
+        "checked": true,
+        "conf": null
+      }
+    },
+    "6-9": {
+      "A": {
+        "checked": true,
+        "conf": null
+      },
+      "C": {
+        "checked": true,
+        "conf": null
+      },
+      "memo": "Sunset"
+    },
+    "6-10": {
+      "C": {
+        "checked": true,
+        "conf": "low"
+      },
+      "D": {
+        "checked": true,
+        "conf": "high"
+      }
+    }
+  }
+}
